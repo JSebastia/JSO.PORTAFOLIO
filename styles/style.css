@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #14213D;
+}
+
+
+/*ENCABEZADO*/
+.headerPag_nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    align-items: center;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #14213D;
+    opacity: 0.95;
+}
+
+.logo {
+    width: 212px;
+    height: 43px;
+}
+
+.headerPag_nav_div {
+    display: flex;
+    gap: 20px;
+}
+
+.headerPag_nav_div_link, .headerPag_nav_div_link_dif {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0 20px 0 0;
+    border-right: 2px solid #FCA311;
+}
+
+.headerPag_nav_div_link_dif {
+    border: none;
+    padding: 0;
+}
+
+.bienvenidaDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 200px 0;
+    gap: 120px;
+}
+
+.bienvenidaDiv_pre {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px
+}
+
+h1 {
+    font-size: 50px;
+    color: white;
+    padding: 22px;
+    border-left: 4px solid #FCA311;
+    border-radius: 0 50px 50px 0;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
+}
+
+.bienvenidaDiv_decoracionText {
+    color: #fca311 ;
+}
+
+.robotPresentaGif {
+    width: 300px;
+}
+
+.bienvenidaDiv_text {
+    font-size: 24px;
+    color: #E5E5E5;
+}
+
+.botonProyectos {
+    background-color: #FCA311;
+    font-size: 24px;
+    color: #000000;
+    font-weight: bold;
+    padding: 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.botonProyectos:hover {
+    font-size: 28px;
+}
+
+.proyectos {
+    padding: 40px 0;
+}
+
+.proyectos_titulo {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    margin: 0 30%;
+}
+
+.proyectos_titulo_texto {
+    color: #FCA311;
+    font-size: 40px;
+}
+
+.proyectos {
+    background-color: #000000;
+}
+
+/*Falta imagen proyecto*/
+
+.proyectos_lista {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin: 5% 10% 4% 10%;
+}
+
+.proyectos_lista_principal {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: 0.4s;
+}
+
+.proyectos_lista_principal:hover {
+    padding: 15px 0;
+    cursor: pointer;
+
+    .proyectos_lista_principal_img {
+        border: 2px solid #FCA311;
+    }
+}
+
+.proyectos_lista_principal_img {
+    border-radius: 20px;
+    width: 344px;
+    padding: 20px;
+    background-color: #14213D;
+    transition: 0.3s;
+    border: 2px solid #000000;
+}
+
+.proyectos_lista_principal_proyecto {
+    background-color: #14213D;
+    padding: 0px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px solid #FCA311;
+    height: 365px;
+}
+
+.proyectos_lista_principal_proyecto_nombre {
+    font-size: 24px;
+    color: #000000;
+    font-weight: bold;
+    background-color: #FCA311;
+    padding: 15px 20px 15px 20px;
+    border-radius: 0 0 20px 20px;
+}
+
+.proyectos_lista_principal_proyecto_descripcion {
+    font-size: 18px;
+    color: #E5E5E5;
+    width: 300px;
+    text-align: justify;
+}
+
+h4 {
+    font-size: 21px;
+    color: #FFFFFF;
+}
+
+.proyectos_lista_principal_proyecto_tecnologias {
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.proyectos_lista_principal_proyecto_tecnologias_nombre {
+    font-size: 15px;
+    color: #FFFFFF;
+    box-shadow: 0px 0px 5px 0px #000000;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+
+
+.iconGitHub {
+    width: 40px;
+}
+
+.proyectos_lista_principal_github {
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #FCA311;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 147px;
+    padding: 10px 5px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.proyectos_lista_principal_github:hover {
+    padding: 15px 10px;  
+}
+
+
+
+
+
+
+
+
+
+.sobreMi_titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 130px;
+    margin: 2% 0;
+}
+
+.sobreMi_titulo_texto {
+    color: #FCA311;
+    font-size: 40px;
+}
+
+.sobreMi_presentacion {
+    display: flex;
+    justify-content: center;
+    gap: 137px;
+    margin: 5% 0;
+}
+
+.sobreMi_presentacion_foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.sobreMi_presentacion_foto_img {
+    width: 200px;
+    border-radius: 100px;
+    border: 2px solid #FCA311;
+}
+
+.sobreMi_presentacion_foto_texto {
+    color: #FFFFFF;
+    font-size: 32px;
+}
+
+.sobreMi_presentacion_foto_redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 33px;
+}
+
+.sobreMi_presentacion_foto_redes_link {
+    background-color: #FCA311;
+    font-size: 24px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 30px;
+    transition: 0.3s;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sobreMi_presentacion_foto_redes_link:hover {
+    padding: 15px 25px;
+}
+
+.sobreMi_presentacion_descripcion {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sobreMi_presentacion_descripcion_texto {
+    color: #FFFFFF;
+    font-size: 24px;
+    padding: 20px 30px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.8);
+    border-radius: 0px 50px 50px 0;
+    border-left: 4px solid #FCA311;
+    width: 767px;
+}
+
+
+
+
+
+
+.herramientas {
+    background-color: #000000;
+    padding: 40px 0;
+}
+
+.herramientas_titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.herramientas_titulo_text {
+    color: #FCA311;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.herramientas_lista {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5% 20%;
+}
+
+.herramientas_lista_li {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: 0.4s;
+}
+
+.herramientas_lista_li:hover {
+    padding: 10px 0 0 0;
+    .herramientas_lista_li_img {
+        box-shadow: 0px 0px 20px 0px #FCA311;
+    }
+
+
+}
+
+.herramientas_lista_li_img {
+    width: 60px;
+    padding: 20px 40px;
+    border: 2px solid #FCA311;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.herramientas_lista_li_nombre {
+    background-color: #FCA311;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+footer {
+    padding: 30px 0 20px 0 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footerContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.logoFooter {
+    width: 125px;
+    height: 25px;
+}
+
+.copyright{
+    font-size: 18px;
+    text-align: center;
+    color: #FFFFFF;
+}
+

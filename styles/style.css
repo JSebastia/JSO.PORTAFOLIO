@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -35,15 +37,25 @@ body {
 .headerPag_nav_div_link, .headerPag_nav_div_link_dif {
     text-decoration: none;
     color: white;
-    font-weight: bold;
-    font-size: 20px;
+    font-weight: 300;
+    font-size: 18px;
+    font-family: "Inter";
     padding: 0 20px 0 0;
     border-right: 2px solid #FCA311;
+    transition: 0.3s;
 }
 
 .headerPag_nav_div_link_dif {
     border: none;
     padding: 0;
+}
+
+.headerPag_nav_div_link:hover{
+    color: #FCA311;
+}
+
+.headerPag_nav_div_link_dif:hover {
+    color: #FCA311;
 }
 
 .bienvenidaDiv {
@@ -63,6 +75,7 @@ body {
 
 h1 {
     font-size: 50px;
+    font-family: "Inter";
     color: white;
     padding: 22px;
     border-left: 4px solid #FCA311;
@@ -80,22 +93,27 @@ h1 {
 
 .bienvenidaDiv_text {
     font-size: 24px;
+    font-weight: 300;
+    font-family: "Inter";
     color: #E5E5E5;
 }
 
 .botonProyectos {
     background-color: #FCA311;
     font-size: 24px;
+    font-family: "Inter";
     color: #000000;
     font-weight: bold;
     padding: 24px;
     border-radius: 25px;
     text-decoration: none;
     transition: 0.5s;
+   
 }
 
 .botonProyectos:hover {
-    font-size: 28px;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px 0px #FCA311;
 }
 
 .proyectos {
@@ -105,13 +123,15 @@ h1 {
 .proyectos_titulo {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 70px;
-    margin: 0 30%;
+    margin: 0 20%;
 }
 
 .proyectos_titulo_texto {
     color: #FCA311;
     font-size: 40px;
+    font-family: "Inter";
 }
 
 .proyectos {
@@ -126,22 +146,14 @@ h1 {
     flex-wrap: wrap;
     gap: 60px;
     margin: 5% 10% 4% 10%;
+    transition: 0.3s;
 }
 
 .proyectos_lista_principal {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    transition: 0.4s;
-}
-
-.proyectos_lista_principal:hover {
-    padding: 15px 0;
-    cursor: pointer;
-
-    .proyectos_lista_principal_img {
-        border: 2px solid #FCA311;
-    }
+    transition: 0.5s;
 }
 
 .proyectos_lista_principal_img {
@@ -149,24 +161,34 @@ h1 {
     width: 344px;
     padding: 20px;
     background-color: #14213D;
-    transition: 0.3s;
+    transition: 0.5s;
     border: 2px solid #000000;
+}
+
+.proyectos_lista_principal:hover {
+    transform: translate(0, 3%);
+    cursor: pointer;
+
+    .proyectos_lista_principal_img {
+        border: 2px solid #FCA311;
+    }
 }
 
 .proyectos_lista_principal_proyecto {
     background-color: #14213D;
-    padding: 0px 20px 20px 20px;
+    padding: 0px 10px 10px 10px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
     border-radius: 20px;
     border: 2px solid #FCA311;
-    height: 365px;
+    height: 400px;
 }
 
 .proyectos_lista_principal_proyecto_nombre {
     font-size: 24px;
+    font-family: "Inter";
     color: #000000;
     font-weight: bold;
     background-color: #FCA311;
@@ -176,6 +198,8 @@ h1 {
 
 .proyectos_lista_principal_proyecto_descripcion {
     font-size: 18px;
+    font-family: "Inter";
+    font-weight: 300;
     color: #E5E5E5;
     width: 300px;
     text-align: justify;
@@ -183,6 +207,7 @@ h1 {
 
 h4 {
     font-size: 21px;
+    font-family: "Inter";
     color: #FFFFFF;
 }
 
@@ -196,6 +221,8 @@ h4 {
 
 .proyectos_lista_principal_proyecto_tecnologias_nombre {
     font-size: 15px;
+    font-family: "Inter";
+    font-weight: 300;
     color: #FFFFFF;
     box-shadow: 0px 0px 5px 0px #000000;
     padding: 8px 15px;
@@ -211,6 +238,7 @@ h4 {
     color: #000000;
     font-weight: bold;
     font-size: 20px;
+    font-family: "Inter";
     background-color: #FCA311;
     display: flex;
     align-items: center;
@@ -223,7 +251,7 @@ h4 {
 }
 
 .proyectos_lista_principal_github:hover {
-    padding: 15px 10px;  
+    transform: scale(1.1);
 }
 
 
@@ -245,6 +273,7 @@ h4 {
 .sobreMi_titulo_texto {
     color: #FCA311;
     font-size: 40px;
+    font-family: "Inter";
 }
 
 .sobreMi_presentacion {
@@ -270,6 +299,7 @@ h4 {
 .sobreMi_presentacion_foto_texto {
     color: #FFFFFF;
     font-size: 32px;
+    font-family: "Inter";
 }
 
 .sobreMi_presentacion_foto_redes {
@@ -282,6 +312,7 @@ h4 {
 .sobreMi_presentacion_foto_redes_link {
     background-color: #FCA311;
     font-size: 24px;
+    font-family: "Inter";
     padding: 10px 20px;
     font-weight: bold;
     text-decoration: none;
@@ -295,7 +326,7 @@ h4 {
 }
 
 .sobreMi_presentacion_foto_redes_link:hover {
-    padding: 15px 25px;
+    transform: scale(1.1);
 }
 
 .sobreMi_presentacion_descripcion {
@@ -307,6 +338,8 @@ h4 {
 .sobreMi_presentacion_descripcion_texto {
     color: #FFFFFF;
     font-size: 24px;
+    font-family: "Inter";
+    font-weight: 300;
     padding: 20px 30px;
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.8);
     border-radius: 0px 50px 50px 0;
@@ -334,6 +367,7 @@ h4 {
 .herramientas_titulo_text {
     color: #FCA311;
     font-size: 40px;
+    font-family: "Inter";
     font-weight: bold;
 }
 
@@ -353,12 +387,10 @@ h4 {
 }
 
 .herramientas_lista_li:hover {
-    padding: 10px 0 0 0;
+    transform: translate(0, 10%);
     .herramientas_lista_li_img {
         box-shadow: 0px 0px 20px 0px #FCA311;
     }
-
-
 }
 
 .herramientas_lista_li_img {
@@ -372,6 +404,7 @@ h4 {
 .herramientas_lista_li_nombre {
     background-color: #FCA311;
     font-size: 18px;
+    font-family: "Inter";
     font-weight: bold;
     text-align: center;
     padding: 15px 0;
@@ -407,6 +440,7 @@ footer {
 
 .copyright{
     font-size: 18px;
+    font-family: "Inter";
     text-align: center;
     color: #FFFFFF;
 }

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Portafolio - Sebastian</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/adaptiveStyle.css">
+        <title>MiPortafolio - Sebastian</title>
     </head>
     <body>
-        <!--Encabezado. Menu de navegación-->
         <header class="headerPag">   
             <nav class="headerPag_nav">
                 <img class="logo" src="./assets/logoMiPortafolio.png">
@@ -15,10 +17,11 @@
                     <a class="headerPag_nav_div_link" href="#sobreMiID">Sobre mí</a>
                     <a class="headerPag_nav_div_link_dif" href="#tecnologiasID">Tecnologias</a>
                 </div>  
+                <span class="headerPag_nav_span">☰</span>
             </nav>
         </header>
+
         <main>
-            <!--Presentacion incial con Bienvenida y una descripción breve-->
             <section id="quienSoyID" class="bienvenidaDiv">
                 <img class="robotPresentaGif" src="./assets/robotBienvenidaP.gif">
                 <div class="bienvenidaDiv_pre">
@@ -27,9 +30,8 @@
                         Me apasiona crear proyectos<br>que solucionen un probrema que ayude a las personas y al mundo.</p>
                     <a href="#proyectosID" class="botonProyectos">Ver proyectos</a>
                 </div>
-            </section>   
-            
-            <!--Se muestran todos los proyectos para el Portafolio-->
+            </section> 
+
             <section id="proyectosID" class="proyectos">
                 <div class="proyectos_titulo">
                     <h2 class="proyectos_titulo_texto">Proyectos destacados</h2>
@@ -37,7 +39,6 @@
                 </div>
                 
                 <ul class="proyectos_lista">
-
                     <li class="proyectos_lista_principal">
                         <img class="proyectos_lista_principal_img" src="./assets/imagenAmigoSecreto.png">
                         <div class="proyectos_lista_principal_proyecto">
@@ -51,9 +52,8 @@
                                 <p class="proyectos_lista_principal_proyecto_tecnologias_nombre">JavaScript</p>
                             </div>
                         </div>
-                        <a class="proyectos_lista_principal_github"><img class="iconGitHub" src="./assets/logoGithub.png">GitHub</a>
+                        <a href="https://github.com/JSebastia/AppAmigoSecreto.git" class="proyectos_lista_principal_github"><img class="iconGitHub" src="./assets/logoGithub.png">GitHub</a>
                     </li>
-
                     <li class="proyectos_lista_principal">
                         <img class="proyectos_lista_principal_img" src="./assets/imagenConversorDeMonedas.png">
                         <div class="proyectos_lista_principal_proyecto">
@@ -68,9 +68,8 @@
                                 <p class="proyectos_lista_principal_proyecto_tecnologias_nombre">API</p>
                             </div>
                         </div>
-                        <a class="proyectos_lista_principal_github"><img class="iconGitHub" src="./assets/logoGithub.png">GitHub</a>
+                        <a href="https://github.com/JSebastia/ConversorDeMonedas.git" class="proyectos_lista_principal_github"><img class="iconGitHub" src="./assets/logoGithub.png">GitHub</a>
                     </li>
-
                     <li class="proyectos_lista_principal">
                         <img class="proyectos_lista_principal_img" src="./assets/imagenLiterAlura.png">
                         <div class="proyectos_lista_principal_proyecto">
@@ -85,9 +84,8 @@
                                 <p class="proyectos_lista_principal_proyecto_tecnologias_nombre">API</p>
                             </div>
                         </div>
-                        <a class="proyectos_lista_principal_github"><img class="iconGitHub" src="./assets/logoGithub.png">GitHub</a>
+                        <a href="https://github.com/JSebastia/LiterAlura.git" class="proyectos_lista_principal_github"><img class="iconGitHub" src="./assets/logoGithub.png">GitHub</a>
                     </li>
-
                     <li class="proyectos_lista_principal">
                         <img class="proyectos_lista_principal_img" src="./assets/imagenForoHub.png">
                         <div class="proyectos_lista_principal_proyecto">
@@ -102,25 +100,23 @@
                                 <p class="proyectos_lista_principal_proyecto_tecnologias_nombre">MySQL</p>
                             </div>
                         </div>
-                        <a class="proyectos_lista_principal_github"><img class="iconGitHub" src="./assets/logoGithub.png">GitHub</a>
+                        <a href="https://github.com/JSebastia/ForoHubSD.git" class="proyectos_lista_principal_github"><img class="iconGitHub" src="./assets/logoGithub.png">GitHub</a>
                     </li>
                 </ul>
             </section>
             
-            <!--Una presentación un poco mas detallada-->
             <section id="sobreMiID" class="sobreMi">
 
                 <div class="sobreMi_titulo">
                     <img class="robotPresentaGif" src="./assets/robotSobreMi.gif">
                     <h2 class="sobreMi_titulo_texto">Sobre mí</h2>
                 </div>
-
                 <div class="sobreMi_presentacion">
                     <div class="sobreMi_presentacion_foto">
                         <img class="sobreMi_presentacion_foto_img" src="./assets/FotoPresentaciónSebastian.jpg">
                         <h3 class="sobreMi_presentacion_foto_texto">Mis redes:</h3>
                         <div class="sobreMi_presentacion_foto_redes">
-                            <a class="sobreMi_presentacion_foto_redes_link" href="#"><img class="iconGitHub" src="./assets/logoGithub.png">GitHub</a>
+                            <a class="sobreMi_presentacion_foto_redes_link" href="https://github.com/JSebastia"><img class="iconGitHub" src="./assets/logoGithub.png">GitHub</a>
                             <a class="sobreMi_presentacion_foto_redes_link" href="#"><img class="iconGitHub" src="./assets/logoGithub.png">LinKedin</a>
                         </div>
                     </div>
@@ -210,19 +206,18 @@
                         <p class="herramientas_lista_li_nombre">Figma</p>
                     </li>
                 </ul>
-
             </section>
         </main>
+
         <footer>
             <div class="footerContainer">
                 <p class="copyright">&#169 2025</p>
                 <img class="logoFooter" src="./assets/logoMiPortafolio.png">
                 <p class="copyright">Todos los derechos reservados.</p>
             </div>
-           
             <p class="copyright">Creado con ❤️ por Sebastian Osorio.</p>
-
         </footer>
 
+        <script src="evento.js" defer></script>
     </body>
 </html>

@@ -1,27 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+/*---------- VARIABLES CSS ---------*/
+:root {
+    --colorPrimario: #14213D;
+    --colorSecundario: #000000;
+    --colorTerciario: #FCA311;
+    --colorCuatenario: #FFFFFF;
+    --colorQuintenario: #E5E5E5;
+
+    --fuenteInter: "Inter";
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: #14213D;
+    background-color: var(--colorPrimario);
 }
 
-
-/*ENCABEZADO*/
+/*---------- ENCABEZADO ----------*/
 .headerPag_nav {
     display: flex;
     justify-content: space-around;
-    padding: 15px 0;
     align-items: center;
-    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.4);
+    
     position: fixed;
+
     width: 100%;
+    padding: 15px 0;
     top: 0;
-    background-color: #14213D;
     opacity: 0.95;
+
+    background-color: var(--colorPrimario);
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.4);  
 }
 
 .logo {
@@ -35,13 +48,16 @@ body {
 }
 
 .headerPag_nav_div_link, .headerPag_nav_div_link_dif {
-    text-decoration: none;
-    color: white;
+    color: var(--colorCuatenario);
+    border-right: 2px solid var(--colorTerciario);
+
     font-weight: 300;
-    font-size: 18px;
-    font-family: "Inter";
+    font-size: 1.125rem;
+    font-family: var(--fuenteInter);
+    text-decoration: none;
+
     padding: 0 20px 0 0;
-    border-right: 2px solid #FCA311;
+    
     transition: 0.3s;
 }
 
@@ -51,19 +67,29 @@ body {
 }
 
 .headerPag_nav_div_link:hover{
-    color: #FCA311;
+    color: var(--colorTerciario);
 }
 
 .headerPag_nav_div_link_dif:hover {
+    color: var(--colorTerciario);
+}
+
+.headerPag_nav_span {
+    display: none;
+}
+
+.headerPag_nav_span:active {
     color: #FCA311;
 }
 
+/*---------- QUIEN SOY (BIENVENIDA) ----------*/
 .bienvenidaDiv {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 200px 0;
     gap: 120px;
+
+    padding: 200px 0;  
 }
 
 .bienvenidaDiv_pre {
@@ -74,17 +100,19 @@ body {
 }
 
 h1 {
-    font-size: 50px;
-    font-family: "Inter";
-    color: white;
+    font-size: 3.125rem;
+    font-family: var(--fuenteInter);
+   
     padding: 22px;
-    border-left: 4px solid #FCA311;
     border-radius: 0 50px 50px 0;
+
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
+    border-left: 4px solid var(--colorTerciario);
+    color: var(--colorCuatenario);
 }
 
 .bienvenidaDiv_decoracionText {
-    color: #fca311 ;
+    color: var(--colorTerciario) ;
 }
 
 .robotPresentaGif {
@@ -92,30 +120,34 @@ h1 {
 }
 
 .bienvenidaDiv_text {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 300;
-    font-family: "Inter";
-    color: #E5E5E5;
+    font-family: var(--fuenteInter);
+
+    color: var(--colorQuintenario);
 }
 
 .botonProyectos {
-    background-color: #FCA311;
-    font-size: 24px;
-    font-family: "Inter";
-    color: #000000;
+    background-color: var(--colorTerciario);
+    color: var(--colorSecundario);
+
+    font-size: 1.5rem;
+    font-family: var(--fuenteInter);
     font-weight: bold;
+    text-decoration: none;
+
     padding: 24px;
     border-radius: 25px;
-    text-decoration: none;
+
     transition: 0.5s;
-   
 }
 
 .botonProyectos:hover {
     transform: scale(1.1);
-    box-shadow: 0px 0px 15px 0px #FCA311;
+    box-shadow: 0px 0px 15px 0px var(--colorTerciario);
 }
 
+/*---------- LISTAS PROYECTOS ----------*/
 .proyectos {
     padding: 40px 0;
 }
@@ -125,27 +157,27 @@ h1 {
     align-items: center;
     justify-content: center;
     gap: 70px;
-    margin: 0 20%;
 }
 
 .proyectos_titulo_texto {
-    color: #FCA311;
-    font-size: 40px;
-    font-family: "Inter";
+    color: var(--colorTerciario);
+
+    font-size: 2.5rem;
+    font-family: var(--fuenteInter);
 }
 
 .proyectos {
-    background-color: #000000;
+    background-color: var(--colorSecundario);
 }
-
-/*Falta imagen proyecto*/
 
 .proyectos_lista {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 60px;
+
     margin: 5% 10% 4% 10%;
+
     transition: 0.3s;
 }
 
@@ -153,6 +185,7 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 20px;
+
     transition: 0.5s;
 }
 
@@ -160,9 +193,11 @@ h1 {
     border-radius: 20px;
     width: 344px;
     padding: 20px;
-    background-color: #14213D;
+
     transition: 0.5s;
-    border: 2px solid #000000;
+
+    border: 2px solid var(--colorSecundario);
+    background-color: var(--colorPrimario);
 }
 
 .proyectos_lista_principal:hover {
@@ -170,49 +205,56 @@ h1 {
     cursor: pointer;
 
     .proyectos_lista_principal_img {
-        border: 2px solid #FCA311;
+        border: 2px solid var(--colorTerciario);
     }
 }
 
 .proyectos_lista_principal_proyecto {
-    background-color: #14213D;
-    padding: 0px 10px 10px 10px;
+    background-color: var(--colorPrimario);
+    border: 2px solid var(--colorTerciario);
+
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
+
+    padding: 0px 10px 10px 10px;
     border-radius: 20px;
-    border: 2px solid #FCA311;
     height: 400px;
 }
 
 .proyectos_lista_principal_proyecto_nombre {
-    font-size: 24px;
-    font-family: "Inter";
-    color: #000000;
+    font-size: 1.5rem;
+    font-family: var(--fuenteInter);
     font-weight: bold;
-    background-color: #FCA311;
+
+    background-color: var(--colorTerciario);
+    color: var(--colorSecundario);
+
     padding: 15px 20px 15px 20px;
     border-radius: 0 0 20px 20px;
 }
 
 .proyectos_lista_principal_proyecto_descripcion {
-    font-size: 18px;
-    font-family: "Inter";
+    font-size: 1.125rem;
+    font-family: var(--fuenteInter);
     font-weight: 300;
-    color: #E5E5E5;
+
+    color: var(--colorQuintenario);
+
     width: 300px;
     text-align: justify;
 }
 
 h4 {
-    font-size: 21px;
-    font-family: "Inter";
-    color: #FFFFFF;
+    font-size: 1.313rem;
+    font-family: var(--fuenteInter);
+    color: var(--colorCuatenario);
 }
 
 .proyectos_lista_principal_proyecto_tecnologias {
     width: 250px;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -220,60 +262,62 @@ h4 {
 }
 
 .proyectos_lista_principal_proyecto_tecnologias_nombre {
-    font-size: 15px;
-    font-family: "Inter";
+    font-size: 0.938rem;
+    font-family: var(--fuenteInter);
     font-weight: 300;
-    color: #FFFFFF;
-    box-shadow: 0px 0px 5px 0px #000000;
+
+    color: var(--colorCuatenario);
+    box-shadow: 0px 0px 5px 0px var(--colorSecundario);
+
     padding: 8px 15px;
     border-radius: 10px;
 }
-
 
 .iconGitHub {
     width: 40px;
 }
 
 .proyectos_lista_principal_github {
-    color: #000000;
+    color: var(--colorSecundario);
+    background-color: var(--colorTerciario);
+
     font-weight: bold;
-    font-size: 20px;
-    font-family: "Inter";
-    background-color: #FCA311;
+    font-size: 1.25rem;
+    font-family: var(--fuenteInter);
+    text-decoration: none; 
+
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
+
     width: 147px;
     padding: 10px 5px;
     border-radius: 20px;
+
     transition: 0.5s;
 }
 
 .proyectos_lista_principal_github:hover {
     transform: scale(1.1);
+    box-shadow: 0px 0px 15px 0 var(--colorTerciario);
 }
 
-
-
-
-
-
-
-
-
+/*----------  SOBRE MI ----------*/
 .sobreMi_titulo {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 130px;
+    gap: 80px;
+
     margin: 2% 0;
 }
 
 .sobreMi_titulo_texto {
-    color: #FCA311;
-    font-size: 40px;
-    font-family: "Inter";
+    color: var(--colorTerciario);
+
+    font-size: 2.5rem;
+    font-family: var(--fuenteInter);
 }
 
 .sobreMi_presentacion {
@@ -292,14 +336,16 @@ h4 {
 
 .sobreMi_presentacion_foto_img {
     width: 200px;
+
     border-radius: 100px;
-    border: 2px solid #FCA311;
+    border: 2px solid var(--colorTerciario);
 }
 
 .sobreMi_presentacion_foto_texto {
-    color: #FFFFFF;
-    font-size: 32px;
-    font-family: "Inter";
+    color: var(--colorCuatenario);
+
+    font-size: 2rem;
+    font-family: var(--fuenteInter);
 }
 
 .sobreMi_presentacion_foto_redes {
@@ -310,15 +356,17 @@ h4 {
 }
 
 .sobreMi_presentacion_foto_redes_link {
-    background-color: #FCA311;
-    font-size: 24px;
-    font-family: "Inter";
-    padding: 10px 20px;
+    background-color: var(--colorTerciario);
+    color: var(--colorSecundario);
+
+    font-size: 1.5rem;
+    font-family: var(--fuenteInter);
     font-weight: bold;
     text-decoration: none;
-    color: #000000;
+
+    padding: 10px 20px;
     border-radius: 30px;
-    transition: 0.3s;
+    transition: 0.4s;
 
     display: flex;
     align-items: center;
@@ -327,6 +375,7 @@ h4 {
 
 .sobreMi_presentacion_foto_redes_link:hover {
     transform: scale(1.1);
+    box-shadow: 0px 0px 15px 0 var(--colorTerciario);
 }
 
 .sobreMi_presentacion_descripcion {
@@ -336,24 +385,22 @@ h4 {
 }
 
 .sobreMi_presentacion_descripcion_texto {
-    color: #FFFFFF;
-    font-size: 24px;
-    font-family: "Inter";
-    font-weight: 300;
-    padding: 20px 30px;
+    color: var(--colorCuatenario);
+    border-left: 4px solid var(--colorTerciario);
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.8);
+
+    font-size: 1.5rem;
+    font-family: var(--fuenteInter);
+    font-weight: 300;
+
+    padding: 20px 30px;
     border-radius: 0px 50px 50px 0;
-    border-left: 4px solid #FCA311;
     width: 767px;
 }
 
-
-
-
-
-
+/*---------- TECNOLOGIAS QUE DOMINO (HERRMAINETAS, TECNOLOGIAS, DISEÑO) ----------*/
 .herramientas {
-    background-color: #000000;
+    background-color: var(--colorSecundario);
     padding: 40px 0;
 }
 
@@ -365,9 +412,9 @@ h4 {
 }
 
 .herramientas_titulo_text {
-    color: #FCA311;
-    font-size: 40px;
-    font-family: "Inter";
+    color: var(--colorTerciario);
+    font-size: 2.5rem;
+    font-family: var(--fuenteInter);
     font-weight: bold;
 }
 
@@ -376,6 +423,7 @@ h4 {
     gap: 70px;
     justify-content: center;
     flex-wrap: wrap;
+
     margin: 5% 20%;
 }
 
@@ -383,43 +431,42 @@ h4 {
     display: flex;
     flex-direction: column;
     gap: 15px;
+
     transition: 0.4s;
 }
 
 .herramientas_lista_li:hover {
     transform: translate(0, 10%);
     .herramientas_lista_li_img {
-        box-shadow: 0px 0px 20px 0px #FCA311;
+        box-shadow: 0px 0px 20px 0px var(--colorTerciario);
     }
 }
 
 .herramientas_lista_li_img {
     width: 60px;
     padding: 20px 40px;
-    border: 2px solid #FCA311;
     border-radius: 20px;
+
     transition: 0.3s;
+
+    border: 2px solid var(--colorTerciario); 
 }
 
 .herramientas_lista_li_nombre {
-    background-color: #FCA311;
-    font-size: 18px;
-    font-family: "Inter";
+    background-color: var(--colorTerciario);
+    font-size: 1.125rem;
+    font-family: var(--fuenteInter);
     font-weight: bold;
     text-align: center;
+
     padding: 15px 0;
     border-radius: 20px;
 }
 
-
-
-
-
-
-
-
+/*---------- FOOTER (PIE DE PAGINA) ----------*/
 footer {
     padding: 30px 0 20px 0 ;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -439,9 +486,9 @@ footer {
 }
 
 .copyright{
-    font-size: 18px;
-    font-family: "Inter";
+    font-size: 1.125rem;
+    font-family: var(--fuenteInter);
     text-align: center;
-    color: #FFFFFF;
+    color: var(--colorCuatenario);
 }
 

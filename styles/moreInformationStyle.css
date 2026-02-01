@@ -1,0 +1,155 @@
+@import "../styles/variables.css";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*----- INFORMATION STYLES -----*/
+
+.information {
+    margin-top: 150px;
+    margin-bottom: 27px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.information__title {
+    font-size: 1.88rem;
+    color: var(--secondary-color);
+    text-align: center;
+    font-family: var(--font-inter);
+    font-weight: 600;
+
+    width: 645px;
+}
+
+.information__button {
+    font-size: 1.25rem;
+    font-family: var(--font-inter);
+    font-weight: 800;
+
+    padding: 22px 45px;
+    border-radius: 20px;
+
+    background-color: var(--tertiary-color);
+    margin-top: 67px;
+}
+
+/*----- CERTIFIEDS STYLES -----*/
+.certifieds {
+    background-color: var(--quaternary-color);
+    padding: 67px 0 160px;
+}
+
+.title-container {
+    width: 422px;
+    margin: 0 auto;
+}
+
+.title-container__title {
+    font-size: 2.2rem;
+    font-family: var(--font-inter);
+    color: var(--secondary-color);
+
+    margin-bottom: 18px;
+}
+
+.title-container__line {
+    width: 126px;
+    height: 5px;
+    margin-left: 12px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: var(--tertiary-color);
+}
+
+.container-certifieds {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 65px;
+    justify-content: center;
+
+    margin-top: 132px;
+}
+
+.card-container {
+    width: 391px;
+    height: 341px;
+    padding: 12px 0;
+    margin-bottom: 27px;
+    
+    background-image:var(--url-background-image-secondary);
+    background-size: 200%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    border: 2px solid var(--quintenary-color);
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.card-container__img {
+    width: 288px;
+    margin: 0 auto;
+}
+
+.card-container__title, .card-container__description {
+    font-size: 1rem;
+    color: var(--secondary-color);
+    font-family: var(--font-inter);
+
+    width: 310px;
+    margin: 0 auto;
+}
+
+.card-container__title {
+    font-weight: 500;
+}
+
+.card-container__description {
+    font-weight: 200;
+    text-align: justify;
+}
+
+.information-decoration {
+    font-family: var(--font-iceland);
+    background-color: var(--quintenary-color);
+    
+    border-radius: 20px;
+    border: 1px solid var(--tertiary-color);
+
+    width: 274px;
+    padding: 9px 0;
+    margin-left: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.information-decoration__text {
+    color: var(--tertiary-color);
+    font-size: 20px;
+}
+
+.information-decoration__button-more {
+    color: var(--tertiary-color);
+    font-family: var(--font-iceland);
+    font-size: 1.2rem;
+
+    border: none;
+    background-color: var(--quintenary-color);  
+}
+
+.information-decoration__button-more:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

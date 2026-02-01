@@ -1,0 +1,25 @@
+{
+    "data" : [
+        {
+            "id" : 1,
+            "urlImage" : "./assets/certificadoBackEnd.png",
+            "title" : "Certificado: Especialización BackEnd",
+            "description" : "Formación avanzada en el Lenguaje Java con Spring Boot. Donde se aprendieron conceptos para la construcción de una API Rest.",
+            "dataReadMore" : {"title" : "Certificado 1"}
+        },
+        {
+            "id" : 2,
+            "urlImage" : "./assets/certificadoOCI.png",
+            "title" : "Certificado: Fundamentos de Oracle.",
+            "description" : "Formación de fundamentos para Oracle Cloud Infrastruicture (OCI). Se aprendieron conceptos básicos para administrar la nube de Oracle.",
+            "dataReadMore" : {"title" : "Certificado 2"}
+        },
+        {
+            "id" : 3,
+            "urlImage" : "./assets/certificadoHackathon.png",
+            "title" : "Certificado: Hackathon ONE.",
+            "description" : "Se desarrollo un proyecto completo de manera colaborativa. Donde obtuve roles de desarrollador FrontEnd y desarrollador BackEnd.",
+            "dataReadMore" : {"title" : "Certificado 3"}
+        }
+    ]
+}

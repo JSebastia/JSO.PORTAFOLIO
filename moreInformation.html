@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JSO.PORTAFOLIO - More_Information</title>
+        <link rel="stylesheet" href="./styles/headerStyle.css">
+        <link rel="stylesheet" href="./styles/moreInformationStyle.css">
+        <link rel="stylesheet" href="./styles/footerStyle.css">
+    </head>
+    <body>
+        <div class="container-header-presentation">
+            <header id="header-id" class="header-page">  
+                <p class="header-page__logo">JSO<span class="text-color">.PORTAFOLIO</span></p> 
+                <nav class="header-nav">
+                    <p class="header-nav__decoration">----- &gt;</p>
+                    <p class="header-nav__decoration">&lt;nav&gt;</p>
+                    <ul class="link-container">
+                        <li class="link-container__li"><a class="link-container__link" href="#quienSoyID">Inicio</a></li>
+                        <li class="link-container__li"><a class="link-container__link" href="#proyectosID">Certificados</a></li>
+                        <li class="link-container__li"><a class="link-container__link" href="#sobreMiID">Proyectos</a></li>
+                        <li class="link-container__li"><a class="link-container__link" href="#sobreMiID">Tecnologías</a></li>
+                    </ul> 
+                    <p class="header-nav__decoration">&lt;/nav&gt;</p>
+                    <!--<span >☰</span>-->
+                </nav>
+            </header>
+
+            <section class="information">
+                <h1 class="information__title">Excelente, aquí encontraras algunos de mis <span class="text-color">Conocimientos</span> y <span class="text-color">Habilidades</span>.</h1>
+                <a class="information__button">Ver proyectos</a>
+            </section>
+        </div>
+
+        <main class="main-container" id="main">
+            <section class="certifieds">
+                <div class="title-container">
+                    <h2 class="title-container__title">Certificados <span class="text-color">destacados</span></h2>
+                    <hr class="title-container__line">
+                </div>
+
+                <div id="containerCardsCertifieds" class="container-certifieds"></div>
+            </section>
+
+        </main>
+        <footer class="footer-container">
+            <p class="footer-container__copyright">&#169 2026<strong class="footer-logo">JSO<span class="text-color">.PORTAFOLIO</span></strong>Todos los derechos reservados.</p>
+            <p class="footer-container__information">Creado con ❤️ por Sebastian Osorio.</p>
+        </footer>
+        <script type="module" src="create_cards.js"></script>
+    </body>
+
+</html>

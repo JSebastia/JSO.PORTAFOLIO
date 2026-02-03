@@ -1,0 +1,50 @@
+{
+    "dataPersonalProjects" : [
+        {
+            "id" : 1,
+            "urlImage" : "./assets/imagenJSOPORTAFOLIO.png",
+            "title" : "JSO.PORTAFOLIO",
+            "description" : "Un portafolio web con un diseño elegante, moderno y tecnologico. Este portafolio muestra algunos de mis proyextos, habilidades y conocimientos.",
+            "technologies" : ["HTMl", "CSS", "JavaScript"],
+            "urlGitHub" : "https://github.com/JSebastia/JSO.PORTAFOLIO.git",
+            "demo" : [true, "https://mi-portafolio-kappa-one.vercel.app/"]
+        },
+        {
+            "id" : 2,
+            "urlImage" : "./assets/imagenAmigoSecreto.png",
+            "title" : "Amigo secreto",
+            "description" : "Una web donde podrás ingresar el nombre de tus amigos y sortearlos aleatoriamente para una determinada ocasión. ¡Corre y sortea los nombres de tus amigos!",
+            "technologies" : ["HTMl", "CSS", "JavaScript"],
+            "urlGitHub" : "https://github.com/JSebastia/AppAmigoSecreto.git",
+            "demo" : [false, ""]  
+        },
+        {
+            "id" : 3,
+            "urlImage" : "./assets/imagenConversorDeMonedas.png",
+            "title" : "Conversor de monedas",
+            "description" : "Una aplicación de consola donde puedes ingresar un tipo de moneda y escoger a que moneda deseas la conversión. Excelente para saber la equivalencia de tu moneda en diferentes países en tiempo real.",
+            "technologies" : ["Java", "PosgreSQL", "Spring"],
+            "urlGitHub" : "https://github.com/JSebastia/ConversorDeMonedas.git",
+            "demo" : [false, ""]
+        },
+        {
+            "id" : 4,
+            "urlImage" : "./assets/imagenLiterAlura.png",
+            "title" : "LiterAlura",
+            "description" : "Una aplicación de consola donde puedes ingresar el nombre de tu libro favorito y encontrar las características del mismo, y muchas funciones más. ¿Qué esperas? ¡Anímate, y busca tu libro!",
+            "technologies" : ["Java", "PosgreSQL", "Spring"],
+            "urlGitHub" : "https://github.com/JSebastia/LiterAlura.git",
+            "demo" : [false, ""]
+        },
+        {
+            "id" : 5,
+            "urlImage" : "./assets/imagenForoHub.png",
+            "title" : "ForoHub",
+            "description" : "Una API Rest que simula un Foro. Con ella podrás ver las funcionalidades que tiene un Foro sencillo. Puedes crear, comentar y editar en el Foro. De un paso a utilizar la API y descubre la magia!",
+            "technologies" : ["Java", "Spring", "MySQL"],
+            "urlGitHub" : "https://github.com/JSebastia/ForoHubSD.git",
+            "demo" : [false, ""]
+        }
+    ],
+    "dataAcademicProjects" : []
+}

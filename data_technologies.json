@@ -1,0 +1,24 @@
+{
+    "dataLanguages" : [
+        {"id" : 1, "urlImage" : "./assets/logoJavaScript.png", "name" : "JavaScript"},
+        {"id" : 2, "urlImage" : "./assets/logoJava.png", "name" : "Java"},
+        {"id" : 3, "urlImage" : "./assets/logoC++.png", "name" : "C++"},
+        {"id" : 4, "urlImage" : "./assets/logoPython.png", "name" : "Python"},
+        {"id" : 4, "urlImage" : "./assets/logoSQL.png", "name" : "SQL"}
+    ],
+
+    "dataFramework" : [
+        {"id" : 1, "urlImage" : "./assets/logoJavaSpring.png", "name" : "Spring"}
+    ],
+
+    "dataTools" : [
+        {"id" : 1, "urlImage" : "./assets/logoQT.png", "name" : "QT"},
+        {"id" : 2, "urlImage" : "./assets/logoVSCode.png", "name" : "VSCode"},
+        {"id" : 3, "urlImage" : "./assets/logIntellij.png", "name" : "Intellij"},
+        {"id" : 4, "urlImage" : "./assets/logoHTML.png", "name" : "HTML"},
+        {"id" : 5, "urlImage" : "./assets/logoCSS.png", "name" : "CSS"},
+        {"id" : 6, "urlImage" : "./assets/logoPostman.png", "name" : "Postman"},
+        {"id" : 1, "urlImage" : "./assets/logoFigma.png", "name" : "Figma"},
+        {"id" : 1, "urlImage" : "./assets/logoCanva.png", "name" : "Canva"}
+    ]
+}

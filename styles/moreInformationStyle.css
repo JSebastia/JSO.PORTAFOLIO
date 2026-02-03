@@ -68,6 +68,18 @@
     background-color: var(--tertiary-color);
 }
 
+/**----- ERROR INFORMATION STYLES -----*/
+.error-information {
+    color: var(--secondary-color);
+    font-family: var(--font-inter);
+    font-size: 1.13rem;
+
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 1px solid var(--tertiary-color);
+}
+/*---------- // ----------*/
+
 .container-certifieds {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -75,6 +87,10 @@
     justify-content: center;
 
     margin-top: 132px;
+}
+
+.container-certifieds-error {
+    grid-column-gap: 0;
 }
 
 .card-container {
@@ -119,7 +135,6 @@
 }
 
 .information-decoration {
-    font-family: var(--font-iceland);
     background-color: var(--quintenary-color);
     
     border-radius: 20px;
@@ -137,6 +152,7 @@
 
 .information-decoration__text {
     color: var(--tertiary-color);
+    font-family: var(--font-iceland);
     font-size: 20px;
 }
 
@@ -152,4 +168,168 @@
 .information-decoration__button-more:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+/*----- PROJECTS STYLES -----*/
+.projects {
+    background-color: var(--quaternary-color);
+}
+
+.title-container-different {
+    margin-left: 5%;
+}
+
+.information-git {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 98px;
+
+    margin-top: 126px;
+    margin-bottom: 100px;
+}
+
+.information-git__link {
+    color: var(--tertiary-color);
+    font-size: 1.3rem;
+    font-family: var(--font-iceland);
+    text-decoration: none;
+}
+
+.icon {
+    font-size: 1rem;
+}
+
+/*----- CARDS PROJECTS STYLES -----*/
+
+.personal-projects {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    grid-column-gap: 104px;
+    grid-row-gap: 80px;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 430px;
+    height: 566px;
+    padding-top: 7px;
+
+    background-image: var(--url-background-image-secondary);
+    background-size: 200%;
+
+    box-shadow: 0px 0px 2px var(--secondary-color);
+    border-radius: 20px;
+}
+
+.project-container__img {
+    width: 419px;
+    height: 236px;
+
+    border-radius: 20px 20px 0 0;
+}
+
+.project-container__title {
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+    font-family: var(--font-inter);
+
+    width: 367px;
+    margin: 43px auto 0 auto;
+
+    align-self: flex-start;
+}
+
+.project-container__description {
+    font-size: 0.94rem;
+    color: var(--sextiary-color);
+    font-family: var(--font-inter);
+    font-weight: 300;
+
+    margin-top: 27px;
+    text-align: justify;
+    width: 367px;
+}
+
+.project-technologies {
+    display: flex;
+    gap: 19px;
+
+    margin-top: 34px;
+}
+
+.project-technologies__text {
+    font-size: 1.13rem;
+    font-family: var(--font-iceland);
+    color: var(--secondary-color);
+
+    padding: 5px 20px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+
+    box-shadow: 0px 0px 2px var(--sextiary-color);
+}
+
+.project-link-information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-top: 1px solid #FFFFFF40;
+    margin: 32px auto 0px auto;
+    padding-top: 18px;
+
+    width: 367px;
+}
+
+.link-gitHub {
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.link-gitHub__img {
+    width: 28px;
+    height: 27px;
+}
+
+.link-gitHub__text {
+    font-size: 0.94rem;
+    color: var(--secondary-color);
+    font-family: var(--font-inter);
+    font-weight: 300;
+}
+
+.project-link-information__demo {
+    font-size: 0.94rem;
+    color: var(--tertiary-color);
+    font-family: var(--font-inter);
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.project-link-information__logo {
+    font-size: 0.94rem;
+    font-family: var(--font-iceberg);
+    color: var(--secondary-color);
+    font-weight: 200;
+}
+
+.project__line {
+    border: none;
+    border-radius: 10px;
+
+    width: 126px;
+    height: 3px;
+
+    margin-left: 20px;
+    margin-top: 30px;
+
+    background-color: var(--tertiary-color);
 }

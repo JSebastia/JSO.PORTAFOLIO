@@ -2,49 +2,86 @@
     "dataPersonalProjects" : [
         {
             "id" : 1,
-            "urlImage" : "./assets/imagenJSOPORTAFOLIO.png",
-            "title" : "JSO.PORTAFOLIO",
-            "description" : "Un portafolio web con un diseño elegante, moderno y tecnologico. Este portafolio muestra algunos de mis proyextos, habilidades y conocimientos.",
-            "technologies" : ["HTMl", "CSS", "JavaScript"],
-            "urlGitHub" : "https://github.com/JSebastia/JSO.PORTAFOLIO.git",
-            "demo" : [true, "https://mi-portafolio-kappa-one.vercel.app/"]
+            "urlImage" : "./assets/imagenDelayZero.png",
+            "title" : "DelayZero - FlightOnTime",
+            "description" : "Una app web que predice si un vuelo es Puntual o Retrasado. Este proyecto usa una API REST. El proyecto se realizo de manera colaborativa donde tuve roles de desarrollador FrontEnd y BackEnd.",
+            "technologies" : ["Java", "Spring", "JavaScript"],
+            "urlGitHub" : "https://github.com/delayzero-team/Equipo-09-Backend-DelayZero.git",
+            "demo" : [true, "http://104.248.222.55/"]
         },
         {
             "id" : 2,
-            "urlImage" : "./assets/imagenAmigoSecreto.png",
-            "title" : "Amigo secreto",
-            "description" : "Una web donde podrás ingresar el nombre de tus amigos y sortearlos aleatoriamente para una determinada ocasión. ¡Corre y sortea los nombres de tus amigos!",
-            "technologies" : ["HTMl", "CSS", "JavaScript"],
-            "urlGitHub" : "https://github.com/JSebastia/AppAmigoSecreto.git",
-            "demo" : [false, ""]  
+            "urlImage" : "./assets/imagenCashierSimulator.png",
+            "title" : "Cashier Simulator",
+            "description" : "Un simulador de cajero automático en C++ bajo el paradigma de Programación Orientada a Objetos. Este proyecto destaca mi capacidad para manejar lógica compleja y un poco del modelado de POO.",
+            "technologies" : ["C++", "POO"],
+            "urlGitHub" : "https://github.com/JSebastia/CashierSimulator.git",
+            "demo" : [false, "#"]
         },
         {
             "id" : 3,
-            "urlImage" : "./assets/imagenConversorDeMonedas.png",
-            "title" : "Conversor de monedas",
-            "description" : "Una aplicación de consola donde puedes ingresar un tipo de moneda y escoger a que moneda deseas la conversión. Excelente para saber la equivalencia de tu moneda en diferentes países en tiempo real.",
-            "technologies" : ["Java", "PosgreSQL", "Spring"],
-            "urlGitHub" : "https://github.com/JSebastia/ConversorDeMonedas.git",
+            "urlImage" : "./assets/imagenJSOPORTAFOLIO.png",
+            "title" : "JSO.PORTAFOLIO",
+            "description" : "Este portafolio nace de la necesidad de crear un espacio que refleje mi identidad como desarrollador. Diseñado bajo un concepto tecnológico y elegante, donde priorice la usabilidad y una estética limpia.",
+            "technologies" : ["HTMl", "CSS", "JavaScript"],
+            "urlGitHub" : "https://github.com/JSebastia/JSO.PORTAFOLIO.git",
+            "demo" : [true, "https://mi-portafolio-kappa-one.vercel.app/"]
+        }, 
+        {
+            "id" : 4,
+            "urlImage" : "./assets/imagenSmartCalculator.png",
+            "title" : "Smart Calculator",
+            "description" : "Una herramienta web que trasciende la calculadora convencional. Realiza operaciones aritméticas básicas, incorpora el calculo de áreas y perímetros de figuras planas y un conversor de unidades.",
+            "technologies" : ["CSS", "HTML", "JavaScript"],
+            "urlGitHub" : "https://github.com/JSebastia/SmartCalculator.git",
+            "demo" : [true, "#"]
+        }   
+    ],
+    "dataAcademicProjects" : [
+        {
+            "id" : 1,
+            "urlImage" : "./assets/gifRevengeOfIt.gif",
+            "title" : "Revenge Of IT",
+            "description" : "Un videojuego 2D, desarrollado en C++ utilizando la librería QT. Este proyecto fue realizado de manera colaborativa donde se implemento POO, físicas, colisiones y optimización de memoria.",
+            "technologies" : ["C++", "Libreria QT", "POO"],
+            "urlGitHub" : "https://github.com/SebastianOOU/Revenge-of-it.git",
             "demo" : [false, ""]
         },
         {
-            "id" : 4,
+            "id" : 2,
+            "urlImage" : "./assets/imagenForoHub.png",
+            "title" : "ForoHub",
+            "description" : "Una API REST que simula un foro, desarrollada con Java y Spring Boot. Permite comentar, editar y actualizar comentarios. Usa Spring Security para la autenticación y autorización usando JWT.",
+            "technologies" : ["Java", "Spring", "MySQL"],
+            "urlGitHub" : "https://github.com/JSebastia/ForoHubSD.git",
+            "demo" : [false, ""]
+        },
+        {
+            "id" : 3,
             "urlImage" : "./assets/imagenLiterAlura.png",
             "title" : "LiterAlura",
-            "description" : "Una aplicación de consola donde puedes ingresar el nombre de tu libro favorito y encontrar las características del mismo, y muchas funciones más. ¿Qué esperas? ¡Anímate, y busca tu libro!",
+            "description" : "Una app de consola que simula un pequeño catalogo de libros, desarrollado con Java y Spring. Permite buscar libros mediante una API externa y guarda la información en una base de datos.",
             "technologies" : ["Java", "PosgreSQL", "Spring"],
             "urlGitHub" : "https://github.com/JSebastia/LiterAlura.git",
             "demo" : [false, ""]
         },
         {
-            "id" : 5,
-            "urlImage" : "./assets/imagenForoHub.png",
-            "title" : "ForoHub",
-            "description" : "Una API Rest que simula un Foro. Con ella podrás ver las funcionalidades que tiene un Foro sencillo. Puedes crear, comentar y editar en el Foro. De un paso a utilizar la API y descubre la magia!",
-            "technologies" : ["Java", "Spring", "MySQL"],
-            "urlGitHub" : "https://github.com/JSebastia/ForoHubSD.git",
+            "id" : 4,
+            "urlImage" : "./assets/imagenPicasFijas.png",
+            "title" : "Picas y Fijas",
+            "description" : "Una implementación del juego clásico de lógica numérica, desarrollado en Python. El juego desafía al usuario a adivinar un número de 4 cifras generado aleatoriamente",
+            "technologies" : ["Python", "Lectura archivos"],
+            "urlGitHub" : "#",
             "demo" : [false, ""]
-        }
-    ],
-    "dataAcademicProjects" : []
+        }, 
+        {
+            "id" : 5,
+            "urlImage" : "./assets/imagenConversorDeMonedas.png",
+            "title" : "Conversor de monedas",
+            "description" : "Una app de consola que realiza conversiones de monedas en tiempo real, desarrollada en Java. La aplicación realiza consultas a una API externa y utiliza POO.",
+            "technologies" : ["Java", "POO"],
+            "urlGitHub" : "https://github.com/JSebastia/ConversorDeMonedas.git",
+            "demo" : [false, ""]
+        }   
+    ]
 }

@@ -1,25 +1,10 @@
-import { getDataCards } from "./read_data.js";
+export function createCardCertified(dataCards, idDivContainer) {
 
-async function createCardCertified() {
-
-    const dataCertified = await getDataCards("data_certifieds.json");
-
-    const divContainerCards = document.getElementById("containerCardsCertifieds");
-
-    if (dataCertified == null) {
-        const information = document.createElement("p")
-        information.classList.add("error-information")
-        information.textContent = "⚠️ No se pudo cargar los datos de las tarjetas.";
-
-        divContainerCards.classList.add("container-certifieds-error")
-        divContainerCards.appendChild(information);
-        return;
-    }
-
-    divContainerCards.classList.remove("container-certifieds-error");
+    const dataCertified = dataCards;
+    const divContainerCards = document.getElementById(idDivContainer);
     const fragment = document.createDocumentFragment();
 
-    dataCertified.data.forEach(CERTIFIED => {
+    dataCertified.forEach(CERTIFIED => {
 
         let divMainCard = document.createElement("div");
         divMainCard.classList.add("card");
@@ -74,18 +59,14 @@ async function createCardCertified() {
     divContainerCards.appendChild(fragment);
 };
 
-async function createCardProject(personal_or_academic) {
+export function createCardProject(dataCards, idDivContainer) {
 
-    const data = await getDataCards("data_projects.json");
-    const divContainerCards = document.getElementById("containerPersonalProjects");
-
-    //verificar si los datos son nulos.
-
-    const dataProject = personal_or_academic == true ? data.dataPersonalProjects : data.dataAcademicProjects;
+    const dataProjects = dataCards;
+    const divContainerCards = document.getElementById(idDivContainer);
     const fragment = document.createDocumentFragment();
-
-    dataProject.forEach(PROJECT => {
-        //Div principal.
+    
+    dataProjects.forEach(PROJECT => {
+        //Div-Conatiner principal.
         let divMainCard = document.createElement("div");
         divMainCard.classList.add("card-project");
 
@@ -175,17 +156,19 @@ async function createCardProject(personal_or_academic) {
 }
 
 
-async function createCardTechnology() {
+export function createCardTechnology(dataCards, idDivContainer) {
 
-    const data = await getDataCards("data_technologies.json");
-    const divContainerCards = document.getElementById("containerLanguagesTechnologies");
-
+    const dataTechnologies = dataCards;
+    const divContainerCards = document.getElementById(idDivContainer);
     const fragment = document.createDocumentFragment();
 
-    data.dataLanguages.forEach(TECHNOLOGY => {
+    dataTechnologies.forEach(TECHNOLOGY => {
 
         let divMainCard = document.createElement("div");
-        divMainCard.classList.add("card-technology");
+        divMainCard.classList.add("container-technology");
+
+        let divContainerData = document.createElement("div");
+        divContainerData.classList.add("card-technology");
 
         let imgTechnology = document.createElement("img");
         imgTechnology.classList.add("card-technology__img");
@@ -195,23 +178,26 @@ async function createCardTechnology() {
         nameTechnology.classList.add("card-technology__name");
         nameTechnology.textContent = TECHNOLOGY.name;
 
-        divMainCard.appendChild(imgTechnology);
-        divMainCard.appendChild(nameTechnology);
+        divContainerData.appendChild(imgTechnology);
+        divContainerData.appendChild(nameTechnology);
+
+        let lineDecoration = document.createElement("hr");
+        lineDecoration.classList.add("container-technology__line");
+
+        divMainCard.appendChild(divContainerData);
+        divMainCard.appendChild(lineDecoration);
+
 
         fragment.appendChild(divMainCard);
     });
 
     divContainerCards.appendChild(fragment);
-}
+};
 
 function createReadMore(text) {
     const divContainerCards = document.getElementById("containerCardsCertifieds");
     let element = document.createElement("p");
     element.textContent = text;
     divContainerCards.appendChild(element);
-}
-
-createCardCertified();
-createCardProject(true);//Create card personal projects.
-createCardTechnology();
+};
 

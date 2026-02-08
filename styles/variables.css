@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Iceland&display=swap');
+
+/*---------- VARIABLES CSS ---------*/
+:root {
+    --primary-color:#050910;
+    --secondary-color:#FFFFFF;
+    --tertiary-color:#FCA311;
+    --quaternary-color:#090F1C;
+    --quintenary-color:#14213D;
+    --sextiary-color:#E5E5E5;
+
+    --font-inter: "Inter";
+    --font-iceberg: "Iceberg";
+    --font-iceland: "Iceland";
+
+    --url-background-image-primary: url("../assets/imagenFondoPrimario.png");
+    --url-background-image-secondary: url("../assets/imagenFondoSecundario.png");
+}

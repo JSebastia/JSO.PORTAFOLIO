@@ -1,5 +1,5 @@
 /*---------- VARIABLES CSS ---------*/
-:root {
+/*:root {
     --colorPrimario: #14213D;
     --colorSecundario: #000000;
     --colorTerciario: #FCA311;
@@ -7,7 +7,7 @@
     --colorQuintenario: #E5E5E5;
 
     --fuenteInter: "Inter";
-}
+}*/
 
 @media (max-width: 1300px) {
     .sobreMi_presentacion_descripcion_texto {

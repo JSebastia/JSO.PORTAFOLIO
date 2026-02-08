@@ -1,0 +1,65 @@
+@import "../styles/variables.css";
+
+/*----- HEADER STYLES -----*/
+
+.container-header-presentation {
+    background-image: var(--url-background-image-primary);
+
+    padding: 26px 0 40px;
+}
+
+.header-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.design-header-scroll {
+    position: fixed;
+    top: 0;
+    padding: 15px 0;
+    width: 100%;
+
+    background-color: var(--primary-color);
+    border-bottom: 1px solid var(--quintenary-color);
+}
+
+.header-page__logo {
+    font-family: var(--font-iceberg);
+    font-size: 1.9rem;
+    color: var(--secondary-color);
+}
+
+.text-color {
+    color: var(--tertiary-color);
+}
+
+.header-nav {
+    font-size: 1.25rem;
+    font-family: var(--font-iceland);
+    padding: 10px 24px;
+
+    background-color: var(--quintenary-color);
+    border: 1px solid var(--tertiary-color);
+    border-radius: 20px;
+
+    display: flex;
+    gap: 10px;
+}
+
+.header-nav__decoration {
+    color: var(--tertiary-color);
+}
+
+.link-container {
+    list-style: none;
+    
+    display: flex;
+    gap: 34px;
+}
+
+.link-container__link {
+    text-decoration: none;
+    color: var(--secondary-color);
+}

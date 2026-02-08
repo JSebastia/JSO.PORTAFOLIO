@@ -173,10 +173,49 @@
 /*----- PROJECTS STYLES -----*/
 .projects {
     background-color: var(--quaternary-color);
+    padding-bottom: 95px;
 }
 
 .title-container-different {
-    margin-left: 5%;
+    margin-left: 10%;
+    margin-bottom: 147px;
+}
+
+.projects__title {
+    font-size: 1.75rem;
+    color: var(--secondary-color);
+    font-family: var(--font-inter);
+    font-weight: 300;
+    text-align: center;
+}
+
+.projects__text {
+    width: 964px;
+
+    font-size: 1.5rem;
+    font-family: var(--font-inter);
+    color: var(--secondary-color);
+    font-weight: 200;
+    text-align: center;
+
+    margin: 51px auto 36px auto;
+}
+
+.projects__line  {
+    width: 200px;
+    height: 5px;
+
+    border: none;
+    border-radius: 5px;
+    background-color: var(--tertiary-color);
+
+    margin: 0 auto;
+    
+}
+
+.information-decoration-projects-width {
+    width: 312px;
+    margin: 89px auto 109px auto;
 }
 
 .information-git {
@@ -196,18 +235,24 @@
     text-decoration: none;
 }
 
-.icon {
-    font-size: 1rem;
-}
-
 /*----- CARDS PROJECTS STYLES -----*/
 
-.personal-projects {
+.card-project:hover {
+    .project__line {
+        width: 376px;
+    }
+}
+
+.personal-projects, .academic-projects {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: center;
     grid-column-gap: 104px;
     grid-row-gap: 80px;
+}
+
+.personal-projects {
+    margin-bottom: 124px;
 }
 
 .project-container {
@@ -224,6 +269,7 @@
 
     box-shadow: 0px 0px 2px var(--secondary-color);
     border-radius: 20px;
+    transition: 2s;
 }
 
 .project-container__img {
@@ -330,6 +376,130 @@
 
     margin-left: 20px;
     margin-top: 30px;
+
+    background-color: var(--tertiary-color);
+    transition: 1s;
+}
+
+.more-title {
+    font-size: 1.5rem;
+    font-family: var(--font-inter);
+    color: var(--secondary-color);
+    font-weight: 600;
+    text-align: center;
+
+    margin-top: 149px;
+}
+
+.more-projects {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 202px;
+    justify-content: center;
+
+    margin-top: 100px;
+}
+
+.more-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.information-decoration-links-width {
+    width: 409px;
+}
+
+.more-container__link {
+    color: var(--tertiary-color);
+    font-family: var(--font-iceland);
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+.icon {
+    font-size: 1rem;
+}
+
+/* ----- TECHNOLOGIES STYLES ----- */
+.technologies {
+    padding: 94px 0 120px;
+    background-color: var(--primary-color);
+}
+
+.title-container-margin {
+    margin-bottom: 50px;
+}
+
+.technologies__information {
+    color: var(--secondary-color);
+    font-size: 1.25rem;
+    font-family: var(--font-iceland);
+
+    padding: 10px 45px;
+
+    border-radius: 30px;
+    box-shadow: 2px 2px 8px #FCA31150;
+    display: inline-block;
+    margin: 64px 10%;
+}
+
+.languages-technologies, .framework-technologies, .tools-technologies {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: center;
+    column-gap: 48px;
+    row-gap: 50px;
+}
+
+.framework-technologies {
+    grid-template-columns: auto auto;
+}
+
+.card-technology {
+    width: 208px;
+    height: 80px;
+
+    background-color: var(--quaternary-color);
+
+    border-radius: 10px;
+    border: 1px solid var(--quintenary-color);
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-technology__img {
+    width: 45px;
+    padding: 9px;
+    margin-left: 14px;
+    border-radius: 10px;
+
+    background-color: var(--quintenary-color);
+}
+
+.card-technology__name {
+    color: var(--secondary-color);
+    font-size: 1rem;
+    font-family: var(--font-inter);
+    font-weight: 600;
+
+    width: 100px;
+    text-align: center;
+}
+
+.container-technology__line {
+    border: none;
+    border-radius: 5px;
+
+    width: 50px;
+    height: 3px;
+
+    margin-left: 9px;
+    margin-top: 14px;
 
     background-color: var(--tertiary-color);
 }

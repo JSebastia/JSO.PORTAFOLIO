@@ -5,21 +5,83 @@
             "urlImage" : "./assets/certificadoBackEnd.png",
             "title" : "Certificado: Especialización BackEnd",
             "description" : "Formación avanzada en el Lenguaje Java con Spring Boot. Donde se aprendieron conceptos para la construcción de una API Rest.",
-            "dataReadMore" : {"title" : "Certificado 1"}
+            "dataReadMore" : {
+                "title" : "Especialización BackEnd con Java y Spring",
+                "year" : 2025,
+                "information" : "Este certificado hace parte del programa ONE Tech Foundation G8 - Back End.",
+                "schools" : ["Alura Latam"],
+                "duration" : "El programa tuvo una carga aproximada de 308 horas.",
+                "description" : "Este certificado tiene un conjunto de cursos que se complementan entre sí, entre los más destacados están: Desarrollo personal, Principiante en programación, Java Orientado a Objetos, Java y Spring FrameWork, Inteligencia Artificial y habilidades blandas. Durante la formación pude aprender Java desde los más básico hasta lo más avanzado con Spring Boot, donde se desarrollaron proyectos bajo la Programación Orientada a Objetos, la creación de APIs junto con la Persistencia mediante Bases de Datos Relacionales y Spring Security con Autenticación y Autorización. Todo esto representa un arduo trabajo lleno de aprendizajes, retos y desafíos.",
+                "thingsLearned" : [
+                    {
+                        "title" : "Programación Orientada a Objetos",
+                        "text" : "aquí se aprendieron conceptos como:",
+                        "skills" : ["Modelado de Clases con sus atributos y métodos (abstracción).", "Herencia.", "Polimorfismo."]
+                    },
+                    {
+                        "title" : "Consumo de APIs con Java",
+                        "text" : "aquí se aprendieron conceptos como:",
+                        "skills" : ["¿Qué es un API?","Comunicación con una API con Java.", "Mapear los datos de la API con GSON y JSON.", "Uso de STREAM para Arrays."]
+                    },
+                    {
+                        "title" : "Spring Boot",
+                        "text" : "aquí se aprendieron conceptos como:",
+                        "skills" : ["¿Qué es un FrameWork?", "Dependencias.", "Spring JPA.", "Spring Security.", "La construcción de una API REST."]
+                    },
+                    {
+                        "title" : "Habilidades blandas",
+                        "text" : "aquí se adquirieron habilidades personales como:",
+                        "skills" : ["Agilidad y protagonismo profesional.", "Emprendimiento.", "Desarrollo personal."]
+                    }
+                ]
+            }
         },
         {
             "id" : 2,
             "urlImage" : "./assets/certificadoOCI.png",
             "title" : "Certificado: Fundamentos de Oracle.",
             "description" : "Formación de fundamentos para Oracle Cloud Infrastruicture (OCI). Se aprendieron conceptos básicos para administrar la nube de Oracle.",
-            "dataReadMore" : {"title" : "Certificado 2"}
+            "dataReadMore" : {
+                "title" : "Oracle Certified Foundations Associate",
+                "year" : 2025,
+                "information" : "Este certificado hace parte del programa ONE Tech Foundation G8 – Tech Advanced.",
+                "schools" : ["Oracle", "Alura Latam"],
+                "duration" : "El programa tuvo una duración aproximada de 48 horas.",
+                "description" : "Para obtener la certificación se tuvo una ruta de aprendizaje de varios cursos, en los cuales se explica de una manera organizada y entendible los conceptos básicos para el manejo de algunos servicios de la Nube de Oracle (OCI). Todo esto, con el objetivo de obtener los conocimientos necesarios para aprobar el examen de Oracle Certified y poder obtener el respectivo certificado.",
+                "thingsLearned" : [
+                    {
+                        "title" : "Oracle Cloud Infrastructure (OCI)",
+                        "text" : "se obtuvieron conocimientos para el manejo de OCI como:",
+                        "skills" : ["¿Qué es la nube?", "¿Qué es un dominio de disponibilidad?", "Máquinas virtuales e Instancias.", "Compartimentos.", "Políticas.", "Almacenamiento.", "Seguridad."]
+                    }
+                ]
+            }
         },
         {
             "id" : 3,
             "urlImage" : "./assets/certificadoHackathon.png",
             "title" : "Certificado: Hackathon ONE.",
             "description" : "Se desarrollo un proyecto completo de manera colaborativa. Donde obtuve roles de desarrollador FrontEnd y desarrollador BackEnd.",
-            "dataReadMore" : {"title" : "Certificado 3"}
+            "dataReadMore" : {
+                "title" : "Participación en el Hackathon ONE 2026 – No Country",
+                "year" : 2026,
+                "information" : "Este certificado hace parte del programa ONE Tech Foundation G8 - Hackathon",
+                "schools" : ["No Country", "ONE"],
+                "duration" : "La Hackathon tuvo una duración de 5 semanas.",
+                "description" : "Esta Hackathon tuvo como objetivo probar y poner en práctica conocimientos del lenguaje de programación Java, bases de datos relacionales, herramientas como Spring Boot y análisis de datos. Todo esto, con el desarrollo de un proyecto denominado: DelayZero – FlightOnTime. Este proyecto consiste en un servicio que predice si un vuelo será Retrasado o Puntual a base de unas métricas dadas por el Usuario. Donde de manera colaborativa, se desarrolló un Modelo de IA en Python para realizar las predicciones y se desarrolló una API REST con Java y Spring que carga el Modelo mediante ONNX. En este proyecto tuve roles de desarrollador FrontEnd y BackEnd.",
+                "thingsLearned" : [
+                    {
+                        "title" : "Trabajo en equipo",
+                        "text" : "se desarrollaron competencias de empatía y comunicación como:",
+                        "skills" : ["Empatía y respeto.", "Colaboración.", "Comunicación asertiva y escucha activa.", "Adaptabilidad.", "Responsabilidad compartida.", "Aprendizaje continuo."]
+                    },
+                    {
+                        "title" : "Implementación del Modelo de IA en ONNX",
+                        "text" : "aquí se aprendieron conceptos como:",
+                        "skills" : ["¿Qué es ONNX?", "Implementar el modelo de IA en la API con ONNX.", "Validar campos para que el modelo entienda las métricas (feature builder).", "Uso correcto de OnnxSequence y OnnxMap."]
+                    }
+                ]
+            }
         }
     ]
 }

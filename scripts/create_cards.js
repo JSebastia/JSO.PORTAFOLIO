@@ -38,8 +38,9 @@ export function createCardCertified(dataCards, idDivContainer) {
         let buttonReadMore = document.createElement("button");
         buttonReadMore.classList.add("information-decoration__button-more");
         buttonReadMore.textContent = 'Leer más';
-        buttonReadMore.addEventListener("click", function() {
-            createReadMore(CERTIFIED.dataReadMore.title);
+        buttonReadMore.addEventListener("click", function(event) {
+                createReadMore(CERTIFIED.dataReadMore);
+           
         });
 
         let textDecorationFinal = document.createElement("p");
@@ -194,10 +195,155 @@ export function createCardTechnology(dataCards, idDivContainer) {
     divContainerCards.appendChild(fragment);
 };
 
-function createReadMore(text) {
-    const divContainerCards = document.getElementById("containerCardsCertifieds");
-    let element = document.createElement("p");
-    element.textContent = text;
-    divContainerCards.appendChild(element);
+function createReadMore(dataReadMore) {
+
+    const elentDivCabecera = document.getElementById("container-header-presentation");
+    const main = document.getElementById("main");
+    const footer = document.getElementById("footer");
+
+    elentDivCabecera.style.filter = "blur(2px)";
+    main.style.filter = "blur(2px)";
+    footer.style.filter = "blur(2px)";
+
+    if (document.querySelector(".container-data")) {
+        let element = document.querySelector(".container-data");
+        divMainReadMore.removeChild(element);
+    };
+    
+    const DATA_CERTIFIED_READ_MORE = dataReadMore;
+    const divMainReadMore = document.getElementById("cardCertifiedReadMore");
+
+    let divContainer = document.createElement("div");
+    divContainer.classList.add("container-data");
+
+    let titleCertified = document.createElement("h2");
+    titleCertified.classList.add("container-data__title");
+    titleCertified.textContent = DATA_CERTIFIED_READ_MORE.title;
+
+    let yearCertified = document.createElement("p");
+    yearCertified.classList.add("container-data__year");
+    yearCertified.textContent = DATA_CERTIFIED_READ_MORE.year;
+
+    let infoCertified = document.createElement("p");
+    infoCertified.classList.add("container-data__info");
+    infoCertified.textContent = DATA_CERTIFIED_READ_MORE.information;
+
+    let divContainerSchools = document.createElement("div");
+    divContainerSchools.classList.add("container-schools");
+
+    for (let i = 0; i < DATA_CERTIFIED_READ_MORE.schools.length; i++) {
+        let schoolCertified = document.createElement("p");
+        schoolCertified.classList.add("container-schools__school");
+        schoolCertified.innerHTML = '<span class="text-color">-- >&nbsp;&nbsp;</span>' + DATA_CERTIFIED_READ_MORE.schools[i];
+
+        divContainerSchools.appendChild(schoolCertified);
+    }
+
+    let durationCertified = document.createElement("p");
+    durationCertified.classList.add("container-data__duration");
+    durationCertified.textContent = DATA_CERTIFIED_READ_MORE.duration;
+
+    let divContainerDescription = document.createElement("div");
+    divContainerDescription.classList.add("container-description");
+
+    let titleDescription = document.createElement("h3");
+    titleDescription.classList.add("container-description__title");
+    titleDescription.textContent = "Descripción:";
+
+    let textDescription = document.createElement("p");
+    textDescription.classList.add("container-description__text");
+    textDescription.textContent = DATA_CERTIFIED_READ_MORE.description;
+
+    divContainerDescription.appendChild(titleDescription);
+    divContainerDescription.appendChild(textDescription);
+
+    let divContainerKnowledge = document.createElement("div");
+    divContainerKnowledge.classList.add("container-Knowledge");
+
+    let titleKnowledge = document.createElement("h3");
+    titleKnowledge.classList.add("container-Knowledge__title");
+    titleKnowledge.textContent = "Conocimientos adquiridos:";
+
+    divContainerKnowledge.appendChild(titleKnowledge);
+
+    const THINGS_LEARNED = DATA_CERTIFIED_READ_MORE.thingsLearned;
+
+    THINGS_LEARNED.forEach(THING => {
+
+        let textKnowledge = document.createElement("p");
+        textKnowledge.classList.add("container-Knowledge__text");
+        textKnowledge.innerHTML = `<span class="text-color">${THING.title}</span> - ${THING.text}`;
+
+        let listSkills = document.createElement("ul");
+        listSkills.classList.add("list-skills");
+
+        for (let i = 0; i < THING.skills.length; i++) {
+            let skill = document.createElement("li");
+            skill.classList.add("list-skills__li");
+            skill.innerHTML = '<span class="text-color">- >&nbsp;&nbsp;</span>' + THING.skills[i];
+
+            listSkills.appendChild(skill);
+        }
+
+        divContainerKnowledge.appendChild(textKnowledge);
+        divContainerKnowledge.appendChild(listSkills);
+    });
+
+    let buttonLeave = document.createElement("button");
+    buttonLeave.classList.add("button-leave");
+    buttonLeave.textContent = "🞪"
+    
+
+    divContainer.appendChild(buttonLeave);
+    divContainer.appendChild(titleCertified);
+    divContainer.appendChild(yearCertified);
+    divContainer.appendChild(infoCertified);
+    divContainer.appendChild(divContainerSchools);
+    divContainer.appendChild(durationCertified);
+    divContainer.appendChild(divContainerDescription);
+    divContainer.appendChild(divContainerKnowledge);
+
+    divMainReadMore.appendChild(divContainer);
+
+    buttonLeave.addEventListener("click", function() {
+        //divContainer.close();
+        //divContainer.remove();
+        let element = document.querySelector(".container-data");
+        divMainReadMore.removeChild(element);
+
+        const elentDivCabecera = document.getElementById("container-header-presentation");
+        const main = document.getElementById("main");
+        const footer = document.getElementById("footer");
+
+        elentDivCabecera.style.filter = "none";
+        main.style.filter = "none";
+        footer.style.filter = "none";
+        //divContainer.style.display = "none";
+    });
+
+     //let element = document.querySelector(".container-data")
+    /*divContainer.addEventListener("click", (e) => {
+       
+        let a = 0;
+        if (document.querySelector(".container-data")) {
+            const rect = divContainer.getBoundingClientRect();
+            const clickDentro = (
+                e.clientX >= rect.left &&
+                e.clientX <= rect.right &&
+                e.clientY >= rect.top &&
+                e.clientY <= rect.bottom
+            );
+            if(!clickDentro) {
+                console.log("Click fuera del elemento - Read more");
+                divContainer.close();
+                divContainer.remove();
+                let element = document.querySelector(".container-data");
+                divMainReadMore.removeChild(element);
+        
+            }
+        }
+    })*/
+    //document.body.appendChild(divContainer);
+    //divContainer.showModal();
 };
 

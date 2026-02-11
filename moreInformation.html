@@ -8,15 +8,15 @@
         <link rel="stylesheet" href="./styles/footerStyle.css">
     </head>
     <body>
-        <div class="container-header-presentation">
+        <div id="container-header-presentation" class="container-header-presentation">
             <header id="header-id" class="header-page">  
-                <p class="header-page__logo">JSO<span class="text-color">.PORTAFOLIO</span></p> 
+                <a href="index.html" class="header-page__logo">JSO<span class="text-color">.PORTAFOLIO</span></a> 
                 <nav class="header-nav">
                     <p class="header-nav__decoration">----- &gt;</p>
                     <p class="header-nav__decoration">&lt;nav&gt;</p>
                     <ul class="link-container">
                         <li class="link-container__li"><a class="link-container__link" href="#quienSoyID">Inicio</a></li>
-                        <li class="link-container__li"><a class="link-container__link" href="#proyectosID">Certificados</a></li>
+                        <li class="link-container__li"><a id="idCertified" class="link-container__link" href="#proyectosID">Certificados</a></li>
                         <li class="link-container__li"><a class="link-container__link" href="#sobreMiID">Proyectos</a></li>
                         <li class="link-container__li"><a class="link-container__link" href="#sobreMiID">Tecnologías</a></li>
                     </ul> 
@@ -27,7 +27,7 @@
 
             <section class="information">
                 <h1 class="information__title">Excelente, aquí encontraras algunos de mis <span class="text-color">Conocimientos</span> y <span class="text-color">Habilidades</span>.</h1>
-                <a class="information__button">Ver proyectos</a>
+                <a href="#idProjects" class="information__button">Ver proyectos</a>
             </section>
         </div>
 
@@ -41,7 +41,7 @@
                 <div id="containerCardsCertifieds" class="container-certifieds"></div>
             </section>
 
-            <section class="projects">
+            <section id="idProjects" class="projects">
                 <div class="title-container title-container-different">
                     <h2 class="title-container__title">Proyectos <span class="text-color">destacados</span></h2>
                     <hr class="title-container__line">
@@ -82,14 +82,14 @@
                         <div class="information-decoration information-decoration-links-width">
                             <pre class="information-decoration__text">------ >   &lt;h3&gt; Un enfoque más personal: &lt;/h3&gt;</pre>
                         </div>
-                        <a href="#" class="more-container__link">Ver todos en GitHub&nbsp;&nbsp;<span class="icon">🡭</span></a>
+                        <a href="https://github.com/JSebastia" class="more-container__link">Ver todos en GitHub&nbsp;&nbsp;<span class="icon">🡭</span></a>
                     </div>
 
                     <div class="more-container">
                         <div class="information-decoration information-decoration-links-width">
                             <pre class="information-decoration__text">------ >   &lt;h3&gt; Un enfoque más académico: &lt;/h3&gt;</pre>
                         </div>
-                        <a href="#" class="more-container__link">Ver todos en GitHub&nbsp;&nbsp;<span class="icon">🡭</span></a>
+                        <a href="https://github.com/SebastianOOU" class="more-container__link">Ver todos en GitHub&nbsp;&nbsp;<span class="icon">🡭</span></a>
                     </div>
                 </div>
 
@@ -116,12 +116,15 @@
 
         </main>
 
-        <footer class="footer-container">
+        <div id="cardCertifiedReadMore" class="card-certified-read-more"></div>
+
+        <footer class="footer-container" id="footer">
             <p class="footer-container__copyright">&#169 2026<strong class="footer-logo">JSO<span class="text-color">.PORTAFOLIO</span></strong>Todos los derechos reservados.</p>
             <p class="footer-container__information">Creado con ❤️ por Sebastian Osorio.</p>
         </footer>
+
         <script type="module" src="./scripts/main_script.js"></script>
-        <!---<script src="prueba.js"></script>-->
+        <script  src="evento.js"></script>
     </body>
 
 </html>

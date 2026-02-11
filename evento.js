@@ -12,7 +12,7 @@ hamburgerMenu.addEventListener("click", () => {
     }    
 });*/
 
-const elementImage = document.getElementById("imgAnimacion");
+/*const elementImage = document.getElementById("imgAnimacion");
 console.log(elementImage.getBoundingClientRect().y);
 
 function animacionCaja1() {
@@ -26,7 +26,7 @@ function animacionCaja2() {
 }
         
 setInterval(animacionCaja1, 1000)
-setInterval(animacionCaja2, 2000)
+setInterval(animacionCaja2, 2000)*/
 
 function changeDesignHeader() {
 
@@ -37,9 +37,27 @@ function changeDesignHeader() {
     } else {
         designHeader.classList.remove("design-header-scroll");
     }
+
+   /* if (scrollY == 400) {
+        const text = document.getElementById("idCertified");
+        text.style.color = "#FCA311";
+    } else {
+        const text = document.getElementById("idCertified");
+        text.style.color = "#FFFFFF"; 
+    }*/
 }
 
 document.addEventListener("scroll", function () {
     changeDesignHeader();
 });
+
+/*function mostrarScroll() {
+
+    document.addEventListener("scroll", function () {
+        console.log(scrollY)
+    });
+    
+}
+
+setInterval(mostrarScroll, 100);*/
         

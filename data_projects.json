@@ -71,7 +71,7 @@
             "title" : "Picas y Fijas",
             "description" : "Una implementación del juego clásico de lógica numérica, desarrollado en Python. El juego desafía al usuario a adivinar un número de 4 cifras generado aleatoriamente",
             "technologies" : ["Python", "Lectura archivos"],
-            "urlGitHub" : "#",
+            "urlGitHub" : "https://github.com/SebastianOOU/Game-fijas_picas.git",
             "demo" : [false, ""]
         }, 
         {

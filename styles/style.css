@@ -76,6 +76,7 @@
     font-family: var(--font-inter);
     font-weight: 700;
     color: #000000;
+    text-decoration: none;
 
     padding: 22px 34px;
     background-color: var(--tertiary-color);
@@ -83,6 +84,11 @@
     border-radius: 20px;
 
     margin: 0 auto;
+    transition: 0.5s;
+}
+
+.presentation__button:hover {
+    background-color: var(--secondary-color);
 }
 
 /*---------- ABOUT ME ----------*/

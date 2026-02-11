@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /*----- INFORMATION STYLES -----*/
 
 .information {
@@ -30,12 +34,19 @@
     font-size: 1.25rem;
     font-family: var(--font-inter);
     font-weight: 800;
+    text-decoration: none;
+    color: #000000;
 
     padding: 22px 45px;
     border-radius: 20px;
 
     background-color: var(--tertiary-color);
     margin-top: 67px;
+    transition: 0.5s;
+}
+
+.information__button:hover {
+    background-color: var(--secondary-color);
 }
 
 /*----- CERTIFIEDS STYLES -----*/
@@ -111,9 +122,19 @@
     transition: 0.5s;
 }
 
+.card-container:hover {
+    box-shadow: 0px 0px 3px var(--tertiary-color);
+
+    .card-container__title {
+        color: var(--tertiary-color);
+    }
+}
+
 .card-container__img {
     width: 288px;
     margin: 0 auto;
+
+    border-radius: 5px;
 }
 
 .card-container__title, .card-container__description {
@@ -123,6 +144,8 @@
 
     width: 310px;
     margin: 0 auto;
+
+    transition: 0.5s;
 }
 
 .card-container__title {
@@ -169,6 +192,162 @@
     text-decoration: underline;
     cursor: pointer;
 }
+
+/* ----- STYLE CARD READ MORE ----- */
+.card-certified-read-more {
+    display: flex;
+    justify-content: center;
+}
+
+.container-data {
+    width: 462px;
+    height: 744px;
+
+    background-color: var(--quaternary-color);
+
+    border-radius: 10px;
+
+    position: fixed;
+    top: 10%;
+
+    overflow: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    padding: 28px 24px;
+
+    box-shadow: 0px 0px 50px 10px var(--quintenary-color);
+}
+
+.container-data::backdrop {
+    backdrop-filter: blur(2px);
+}
+
+.button-leave {
+    width: 60px;
+    height: 60px;
+
+    font-size: 2.5rem;
+    color: var(--tertiary-color);
+
+    border: 1px solid var(--tertiary-color);
+    border-radius: 80px;
+
+    background-color: var(--quintenary-color);
+    box-shadow: 0px 2px 8px var(--tertiary-color);
+
+    position: sticky;
+    top: 0;
+
+    transition: 0.5;
+}
+
+.button-leave:hover {
+    color: var(--secondary-color);
+    cursor: pointer;
+
+    box-shadow: 0px 2px 15px var(--tertiary-color);
+}
+
+.button-leave:active {
+    border: 1px solid var(--secondary-color);
+}
+
+.container-data__title {
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+    font-family: var(--font-inter);
+    font-weight: 700;
+}
+
+.container-data__year {
+    font-size: 1.13rem;
+    font-family: var(--font-inter);
+    color: var(--sextiary-color-dark);
+    font-weight: 600;
+}
+
+.container-data__info {
+    font-size: 1.13rem;
+    color: var(--sextiary-color);
+    font-family: var(--font-inter);
+}
+
+.container-schools {
+    display: flex;
+    align-self: flex-start;
+    gap: 30px;
+}
+
+.container-schools__school {
+    font-family: var(--font-inter);
+    color: var(--secondary-color);
+    font-weight: 300;
+    font-size: 0.9rem;
+
+    padding: 9px 17px;
+    background-color: var(--primary-color);
+    
+    box-shadow: 0px 0px 2px var(--sextiary-color);
+    border-radius: 5px;
+}
+
+.container-data__duration {
+    font-size: 1rem;
+    color: var(--sextiary-color-dark);
+    font-family: var(--font-inter);
+    font-weight: 300;
+
+    align-self: flex-start;
+}
+
+.container-description__title, .container-Knowledge__title {
+    font-size: 1.13rem;
+    color: var(--secondary-color);
+    font-family: var(--font-inter);
+    font-weight: 600;
+}
+
+.container-description__title {
+    margin-bottom: 16px;
+}
+
+.container-description__text {
+    font-size: 1.13rem;
+    color: var(--sextiary-color);
+    font-family: var(--font-inter);
+    font-weight: 300;
+}
+
+.container-Knowledge__title {
+    margin-bottom: 22px;
+}
+
+.container-Knowledge__text {
+    font-size: 1.13rem;
+    font-family: var(--font-inter);
+    color: var(--secondary-color);
+    font-weight: 300;
+}
+
+.list-skills {
+    list-style: none;
+    margin-bottom: 24px;
+    margin-top: 17px;
+}
+
+.list-skills__li {
+    font-size: 1.13rem;
+    color: var(--secondary-color);
+    font-family: var(--font-inter);
+    font-weight: 200;
+
+    margin-bottom: 5px;
+}
+
 
 /*----- PROJECTS STYLES -----*/
 .projects {
@@ -241,6 +420,14 @@
     .project__line {
         width: 376px;
     }
+
+    .project-container  {
+        box-shadow: 0px 0px 3px var(--tertiary-color);
+    }
+
+    .project-container__title {
+        color: var(--tertiary-color);
+    }
 }
 
 .personal-projects, .academic-projects {
@@ -269,7 +456,7 @@
 
     box-shadow: 0px 0px 2px var(--secondary-color);
     border-radius: 20px;
-    transition: 2s;
+    transition: 0.5s;
 }
 
 .project-container__img {
@@ -288,6 +475,8 @@
     margin: 43px auto 0 auto;
 
     align-self: flex-start;
+
+    transition: 0.5s;
 }
 
 .project-container__description {
@@ -338,6 +527,13 @@
     display: flex;
     align-items: center;
     gap: 14px;
+
+    transition: 0.3s;
+}
+
+.link-gitHub:hover {
+    text-decoration: underline;
+    color: var(--tertiary-color);
 }
 
 .link-gitHub__img {
@@ -358,6 +554,11 @@
     font-family: var(--font-inter);
     font-weight: 300;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+.project-link-information__demo:hover {
+    text-decoration: underline;
 }
 
 .project-link-information__logo {
@@ -417,6 +618,12 @@
     font-family: var(--font-iceland);
     font-size: 1.25rem;
     text-decoration: none;
+
+    transition: 0.5s;
+}
+
+.more-container__link:hover {
+    text-decoration: underline;
 }
 
 .icon {
@@ -470,6 +677,22 @@
     display: flex;
     align-items: center;
     gap: 20px;
+
+    transition: 0.5s;
+}
+
+.container-technology:hover {
+
+    .card-technology {
+        box-shadow: 0px 0px 3px var(--tertiary-color);
+    }
+
+    .container-technology__line {
+        width: 190px;
+    }
+    .card-technology__img {
+        background-color: var(--tertiary-color);
+    }
 }
 
 .card-technology__img {
@@ -479,6 +702,8 @@
     border-radius: 10px;
 
     background-color: var(--quintenary-color);
+
+    transition: 0.5s;
 }
 
 .card-technology__name {
@@ -502,4 +727,5 @@
     margin-top: 14px;
 
     background-color: var(--tertiary-color);
+    transition: 1s;
 }

@@ -1,0 +1,180 @@
+@media (max-width: 1600px) {
+
+    .container-certifieds {
+        grid-template-columns: auto auto;
+        row-gap: 80px;
+    }
+
+    .personal-projects, .academic-projects {
+        grid-template-columns: auto auto;
+    }
+
+    .languages-technologies, .tools-technologies {
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media (max-width: 1280px) {
+    .container-data {
+        top: 0;
+    }
+}
+
+@media (max-width: 1180px) {
+
+    .languages-technologies, .tools-technologies {
+        grid-template-columns: auto auto auto;
+    }
+
+    .more-projects {
+        grid-template-columns: auto;
+        row-gap: 50px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .container-data {
+        height: 540px;
+    }
+
+    .information__title {
+        width: 600px;
+    }
+
+    .information-projects {
+        width: 500px;
+    }
+
+    .container-certifieds {
+        grid-template-columns: auto;
+        row-gap: 80px;
+    }
+
+    .personal-projects, .academic-projects {
+        grid-template-columns: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .projects__text {
+        width: 700px;;
+    }
+}
+
+@media (max-width: 800px) {
+     .languages-technologies, .tools-technologies {
+        grid-template-columns: auto auto;
+    }
+
+    .projects__text {
+        width: 500px;;
+    }
+}
+
+@media (max-width: 680px) {
+
+    .information__title {
+        width: 500px;
+    }
+
+    .information__subtittle {
+        width: 400px;
+    }
+
+    .information-projects {
+        width: 300px;
+
+        padding: 10px 15px 10px 15px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .information__title, .projects__text, .information__subtittle {
+        width: 300px;
+    }
+
+    .title-container {
+        width: 330px;
+    }
+
+    .title-container-different {
+        width: 290px;
+        margin: 0 auto 147px auto;
+    }
+
+    .title-container__title{
+        font-size: 1.7rem;
+    }
+
+    .card-container {
+        width: 340px;
+    }
+
+    .container-data {
+        width: 330px;
+    }
+
+    .project-container {
+        width: 350px;
+    }
+
+    .card-project:hover {
+        .project__line {
+            width: 310px;
+        }
+    }
+
+    .project-container__img {
+        width: 339px;
+        height: 200px;
+    }
+
+    .project-container__title, .project-container__description{
+        width: 300px;
+    }
+
+    .project-technologies{
+        width: 300px;
+        flex-flow: wrap;
+        justify-content: center;
+    }
+
+    .project-link-information {
+        width: 300px;
+        margin: 12px auto 0px auto
+    }
+
+    .link-gitHub__img {
+        width: 20px;
+        height: 19px;
+    }
+
+    .project-link-information__logo {
+        font-size: 0.7rem;
+    }
+
+    .information-decoration-links-width {
+        width: 340px;
+    }
+
+    .information-decoration__text, .more-container__link {
+        font-size: 1rem;
+    }
+
+    .technologies {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .technologies__information {
+        padding: 10px 20px;
+    }
+
+    .languages-technologies, .framework-technologies, .tools-technologies {
+        grid-template-columns: auto;
+    }
+}

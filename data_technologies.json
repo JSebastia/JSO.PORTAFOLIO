@@ -1,0 +1,28 @@
+{
+    "dataLanguages" : [
+        {"id" : 1, "urlImage" : "./assets/logoJavaScript.png", "name" : "JavaScript"},
+        {"id" : 2, "urlImage" : "./assets/logoJava.png", "name" : "Java"},
+        {"id" : 3, "urlImage" : "./assets/logoC++.png", "name" : "C++"},
+        {"id" : 4, "urlImage" : "./assets/logoPython.png", "name" : "Python"},
+        {"id" : 4, "urlImage" : "./assets/logoSQL.png", "name" : "SQL"}
+    ],
+
+    "dataFramework" : [
+        {"id" : 1, "urlImage" : "./assets/logoSpring.png", "name" : "Spring"},
+        {"id" : 2, "urlImage" : "./assets/logoQT.png", "name" : "QT"}
+    ],
+
+    "dataTools" : [
+        {"id" : 1, "urlImage" : "./assets/logoQT.png", "name" : "Qt Creator"},
+        {"id" : 2, "urlImage" : "./assets/logoVSCode.png", "name" : "VS Code"},
+        {"id" : 3, "urlImage" : "./assets/logoIntellij.png", "name" : "Intellij"},
+        {"id" : 4, "urlImage" : "./assets/logoHTML.png", "name" : "HTML"},
+        {"id" : 5, "urlImage" : "./assets/logoCSS.png", "name" : "CSS"},
+        {"id" : 6, "urlImage" : "./assets/logoPostman.png", "name" : "Postman"},
+        {"id" : 7, "urlImage" : "./assets/logoFigma.png", "name" : "Figma"},
+        {"id" : 8, "urlImage" : "./assets/logoCanva.png", "name" : "Canva"},
+        {"id" : 9, "urlImage" : "./assets/logoGit.png", "name" : "Git"},
+        {"id" : 10, "urlImage" : "./assets/logoGitHub.png", "name" : "GitHub"},
+        {"id" : 11, "urlImage" : "./assets/logoMySQL.png", "name" : "MySQL"}
+    ]
+}

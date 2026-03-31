@@ -1,0 +1,87 @@
+{
+    "dataPersonalProjects" : [
+        {
+            "id" : 1,
+            "urlImage" : "./assets/gifDelayZero.gif",
+            "title" : "DelayZero - FlightOnTime",
+            "description" : "Una app web que predice si un vuelo es Puntual o Retrasado. Este proyecto usa una API REST. El proyecto se realizo de manera colaborativa donde tuve roles de desarrollador FrontEnd y BackEnd.",
+            "technologies" : ["Java", "Spring", "JavaScript"],
+            "urlGitHub" : "https://github.com/delayzero-team/Equipo-09-Backend-DelayZero.git",
+            "demo" : [false, "http://104.248.222.55/"]
+        },
+        {
+            "id" : 2,
+            "urlImage" : "./assets/gifCashierSimulator.gif",
+            "title" : "Cashier Simulator",
+            "description" : "Un simulador de cajero automático en C++ bajo el paradigma de Programación Orientada a Objetos. Este proyecto destaca mi capacidad para manejar lógica compleja y un poco del modelado de POO.",
+            "technologies" : ["C++", "POO"],
+            "urlGitHub" : "https://github.com/JSebastia/CashierSimulator.git",
+            "demo" : [false, "#"]
+        },
+        {
+            "id" : 3,
+            "urlImage" : "./assets/gifJSO.PORTAFOLIO.gif",
+            "title" : "JSO.PORTAFOLIO",
+            "description" : "Este portafolio nace de la necesidad de crear un espacio que refleje mi identidad como desarrollador. Diseñado bajo un concepto tecnológico y elegante, donde priorice la usabilidad y una estética limpia.",
+            "technologies" : ["HTMl", "CSS", "JavaScript"],
+            "urlGitHub" : "https://github.com/JSebastia/JSO.PORTAFOLIO.git",
+            "demo" : [true, "https://mi-portafolio-kappa-one.vercel.app/"]
+        }, 
+        {
+            "id" : 4,
+            "urlImage" : "./assets/gifSmartCalculator.gif",
+            "title" : "Smart Calculator",
+            "description" : "Una herramienta web que trasciende la calculadora convencional. Realiza operaciones aritméticas básicas, incorpora el calculo de áreas y perímetros de figuras planas y un conversor de unidades.",
+            "technologies" : ["CSS", "HTML", "JavaScript"],
+            "urlGitHub" : "https://github.com/JSebastia/SmartCalculator.git",
+            "demo" : [false, "#"]
+        }   
+    ],
+    "dataAcademicProjects" : [
+        {
+            "id" : 1,
+            "urlImage" : "./assets/gifRevengeOfIt.gif",
+            "title" : "Revenge Of IT",
+            "description" : "Un videojuego 2D, desarrollado en C++ utilizando la librería QT. Este proyecto fue realizado de manera colaborativa donde se implemento POO, físicas, colisiones y optimización de memoria.",
+            "technologies" : ["C++", "Libreria QT", "POO"],
+            "urlGitHub" : "https://github.com/SebastianOOU/Revenge-of-it.git",
+            "demo" : [false, ""]
+        },
+        {
+            "id" : 2,
+            "urlImage" : "./assets/gifForoHub.gif",
+            "title" : "ForoHub",
+            "description" : "Una API REST que simula un foro, desarrollada con Java y Spring Boot. Permite comentar, editar y actualizar comentarios. Usa Spring Security para la autenticación y autorización usando JWT.",
+            "technologies" : ["Java", "Spring", "MySQL"],
+            "urlGitHub" : "https://github.com/JSebastia/ForoHubSD.git",
+            "demo" : [false, ""]
+        },
+        {
+            "id" : 3,
+            "urlImage" : "./assets/gifLiterAlura.gif",
+            "title" : "LiterAlura",
+            "description" : "Una app de consola que simula un pequeño catalogo de libros, desarrollado con Java y Spring. Permite buscar libros mediante una API externa y guarda la información en una base de datos.",
+            "technologies" : ["Java", "PosgreSQL", "Spring"],
+            "urlGitHub" : "https://github.com/JSebastia/LiterAlura.git",
+            "demo" : [false, ""]
+        },
+        {
+            "id" : 4,
+            "urlImage" : "./assets/gifPicasFijas.gif",
+            "title" : "Picas y Fijas",
+            "description" : "Una implementación del juego clásico de lógica numérica, desarrollado en Python. El juego desafía al usuario a adivinar un número de 4 cifras generado aleatoriamente",
+            "technologies" : ["Python", "Lectura archivos"],
+            "urlGitHub" : "https://github.com/SebastianOOU/Game-fijas_picas.git",
+            "demo" : [false, ""]
+        }, 
+        {
+            "id" : 5,
+            "urlImage" : "./assets/gifConversorDeMonedas.gif",
+            "title" : "Conversor de monedas",
+            "description" : "Una app de consola que realiza conversiones de monedas en tiempo real, desarrollada en Java. La aplicación realiza consultas a una API externa y utiliza POO.",
+            "technologies" : ["Java", "POO", "API"],
+            "urlGitHub" : "https://github.com/JSebastia/ConversorDeMonedas.git",
+            "demo" : [false, ""]
+        }   
+    ]
+}

@@ -1,0 +1,27 @@
+.footer-container {
+    background-color: var(--primary-color);
+    text-align: center;
+
+    padding: 23px 0;
+    border-top: 1px solid var(--quintenary-color);
+}
+
+.footer-container__copyright, .footer-container__information {
+    font-size: 0.88rem;
+    font-family: var(--font-inter);
+    color: var(--secondary-color);
+    font-weight: 200;
+}
+
+.footer-container__copyright {
+    margin-bottom: 18px;
+}
+
+.footer-logo {
+    color: var(--secondary-color);
+    font-family: var(--font-iceberg);
+    font-size: 1.13rem;
+    font-weight: 100;
+
+    margin: 0 15px;
+}

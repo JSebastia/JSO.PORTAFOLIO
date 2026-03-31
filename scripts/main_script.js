@@ -39,6 +39,6 @@ createCardTechnology(dataCardsTechnologies.dataTools, idContainerTools);
 
 }*/
 
-const a = "hola"
+/*const a = "hola"
     + "Sebas" + "carla";
-    console.log(a);
+    console.log(a);*/

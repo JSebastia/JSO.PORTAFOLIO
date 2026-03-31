@@ -38,9 +38,8 @@ export function createCardCertified(dataCards, idDivContainer) {
         let buttonReadMore = document.createElement("button");
         buttonReadMore.classList.add("information-decoration__button-more");
         buttonReadMore.textContent = 'Leer más';
-        buttonReadMore.addEventListener("click", function(event) {
-                createReadMore(CERTIFIED.dataReadMore);
-           
+        buttonReadMore.addEventListener("click", function() {
+            createReadMore(CERTIFIED.dataReadMore, buttonReadMore);
         });
 
         let textDecorationFinal = document.createElement("p");
@@ -59,6 +58,7 @@ export function createCardCertified(dataCards, idDivContainer) {
 
     divContainerCards.appendChild(fragment);
 };
+
 
 export function createCardProject(dataCards, idDivContainer) {
 
@@ -195,21 +195,11 @@ export function createCardTechnology(dataCards, idDivContainer) {
     divContainerCards.appendChild(fragment);
 };
 
-function createReadMore(dataReadMore) {
 
-    const elentDivCabecera = document.getElementById("container-header-presentation");
-    const main = document.getElementById("main");
-    const footer = document.getElementById("footer");
-
-    elentDivCabecera.style.filter = "blur(2px)";
-    main.style.filter = "blur(2px)";
-    footer.style.filter = "blur(2px)";
-
-    if (document.querySelector(".container-data")) {
-        let element = document.querySelector(".container-data");
-        divMainReadMore.removeChild(element);
-    };
+function createReadMore(dataReadMore, buttonReadMore) {
     
+    createClassOrDeleteClass();
+
     const DATA_CERTIFIED_READ_MORE = dataReadMore;
     const divMainReadMore = document.getElementById("cardCertifiedReadMore");
 
@@ -291,9 +281,14 @@ function createReadMore(dataReadMore) {
 
     let buttonLeave = document.createElement("button");
     buttonLeave.classList.add("button-leave");
-    buttonLeave.textContent = "🞪"
+    buttonLeave.textContent = "🞪";
+    buttonLeave.addEventListener("click", function () {
+        divContainer.remove();
+        createClassOrDeleteClass();
+        // Se elimina la tarjeta (read more) y se elimina el evento del document.
+        document.removeEventListener("click", deleteCardReadMore);
+    });
     
-
     divContainer.appendChild(buttonLeave);
     divContainer.appendChild(titleCertified);
     divContainer.appendChild(yearCertified);
@@ -305,45 +300,30 @@ function createReadMore(dataReadMore) {
 
     divMainReadMore.appendChild(divContainer);
 
-    buttonLeave.addEventListener("click", function() {
-        //divContainer.close();
-        //divContainer.remove();
-        let element = document.querySelector(".container-data");
-        divMainReadMore.removeChild(element);
+    let getEvent = null;
+    // Se obtiene el "evento" para verificarlo en la función DELETECARDMORE (esto para despues eliminar el evento de document).
+    document.addEventListener("click", function(event) { getEvent = event ; });
+    // Se elimina la tarjeta (read more) y se elimina el evento del document.
+    document.addEventListener("click", deleteCardReadMore);
 
-        const elentDivCabecera = document.getElementById("container-header-presentation");
-        const main = document.getElementById("main");
-        const footer = document.getElementById("footer");
-
-        elentDivCabecera.style.filter = "none";
-        main.style.filter = "none";
-        footer.style.filter = "none";
-        //divContainer.style.display = "none";
-    });
-
-     //let element = document.querySelector(".container-data")
-    /*divContainer.addEventListener("click", (e) => {
-       
-        let a = 0;
-        if (document.querySelector(".container-data")) {
-            const rect = divContainer.getBoundingClientRect();
-            const clickDentro = (
-                e.clientX >= rect.left &&
-                e.clientX <= rect.right &&
-                e.clientY >= rect.top &&
-                e.clientY <= rect.bottom
-            );
-            if(!clickDentro) {
-                console.log("Click fuera del elemento - Read more");
-                divContainer.close();
-                divContainer.remove();
-                let element = document.querySelector(".container-data");
-                divMainReadMore.removeChild(element);
-        
-            }
-        }
-    })*/
-    //document.body.appendChild(divContainer);
-    //divContainer.showModal();
+    function deleteCardReadMore() {
+        if(!divContainer.contains(getEvent.target) && !buttonReadMore.contains(getEvent.target)){
+            divContainer.remove();
+            createClassOrDeleteClass();
+            document.removeEventListener("click", deleteCardReadMore);
+        };       
+    };
 };
 
+function createClassOrDeleteClass() {
+
+    let nameClass = "blurred-active";
+
+    const divContainerHeader = document.getElementById("idContainerHeaderPresentation");
+    const mainContainer = document.getElementById("idMain");
+    const footerContainer = document.getElementById("idFooter");
+
+    divContainerHeader.classList.toggle(nameClass);
+    mainContainer.classList.toggle(nameClass);
+    footerContainer.classList.toggle(nameClass);
+}

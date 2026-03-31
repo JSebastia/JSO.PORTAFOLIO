@@ -9,8 +9,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/*----- INFORMATION STYLES -----*/
-
+/*----- STYLES SECTION INFORMATION -----*/
 .information {
     margin-top: 150px;
     margin-bottom: 27px;
@@ -25,9 +24,19 @@ html {
     color: var(--secondary-color);
     text-align: center;
     font-family: var(--font-inter);
-    font-weight: 600;
+    font-weight: 200;
 
-    width: 645px;
+    width: 900px;
+}
+
+.information__subtittle {
+    font-size: 1.88rem;
+    color: var(--secondary-color);
+    text-align: center;
+    font-family: var(--font-inter);
+    font-weight: 400;
+
+    margin-top: 30px;
 }
 
 .information__button {
@@ -49,7 +58,11 @@ html {
     background-color: var(--secondary-color);
 }
 
-/*----- CERTIFIEDS STYLES -----*/
+main {
+    background-color: var(--quaternary-color);
+}
+
+/*----- STYLES SECTION CERTIFIEDS -----*/
 .certifieds {
     background-color: var(--quaternary-color);
     padding: 67px 0 160px;
@@ -123,7 +136,7 @@ html {
 }
 
 .card-container:hover {
-    box-shadow: 0px 0px 3px var(--tertiary-color);
+    box-shadow: 0px 0px 5px var(--tertiary-color);
 
     .card-container__title {
         color: var(--tertiary-color);
@@ -348,48 +361,43 @@ html {
     margin-bottom: 5px;
 }
 
-
-/*----- PROJECTS STYLES -----*/
+/*----- STYLES SECTION PROJECTS -----*/
 .projects {
     background-color: var(--quaternary-color);
     padding-bottom: 95px;
 }
 
 .title-container-different {
-    margin-left: 10%;
     margin-bottom: 147px;
 }
 
-.projects__title {
-    font-size: 1.75rem;
+.information-projects {
+    width: 844px;
+
+    padding: 18px 60px;
+    border-radius: 10px;
+    border: 1px solid var(--tertiary-color);
+
     color: var(--secondary-color);
-    font-family: var(--font-inter);
-    font-weight: 300;
-    text-align: center;
-}
+    font-family: var(--font-iceland);
+    font-size: 1.4rem;
 
-.projects__text {
-    width: 964px;
+    background-color: var(--quintenary-color);
 
-    font-size: 1.5rem;
-    font-family: var(--font-inter);
-    color: var(--secondary-color);
-    font-weight: 200;
-    text-align: center;
-
-    margin: 51px auto 36px auto;
-}
-
-.projects__line  {
-    width: 200px;
-    height: 5px;
-
-    border: none;
-    border-radius: 5px;
-    background-color: var(--tertiary-color);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 
     margin: 0 auto;
-    
+}
+
+.information-projects__title {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.information-projects__text {
+    margin-left: 30px;
 }
 
 .information-decoration-projects-width {
@@ -397,25 +405,7 @@ html {
     margin: 89px auto 109px auto;
 }
 
-.information-git {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 98px;
-
-    margin-top: 126px;
-    margin-bottom: 100px;
-}
-
-.information-git__link {
-    color: var(--tertiary-color);
-    font-size: 1.3rem;
-    font-family: var(--font-iceland);
-    text-decoration: none;
-}
-
 /*----- CARDS PROJECTS STYLES -----*/
-
 .card-project:hover {
     .project__line {
         width: 376px;
@@ -611,6 +601,7 @@ html {
 
 .information-decoration-links-width {
     width: 409px;
+    margin-left: 0;
 }
 
 .more-container__link {
@@ -630,7 +621,7 @@ html {
     font-size: 1rem;
 }
 
-/* ----- TECHNOLOGIES STYLES ----- */
+/* ----- STYLES SECTION TECHNOLOGIES  ----- */
 .technologies {
     padding: 94px 0 120px;
     background-color: var(--primary-color);
@@ -728,4 +719,9 @@ html {
 
     background-color: var(--tertiary-color);
     transition: 1s;
+}
+
+.blurred-active {
+    filter: blur(2px);
+    pointer-events: none;
 }

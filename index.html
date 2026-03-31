@@ -2,27 +2,30 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link rel="icon" href="./assets/logoHead.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./styles/headerStyle.css">
         <link rel="stylesheet" href="./styles/style.css">
-        <link rel="stylesheet" href="./styles/adaptiveStyle.css">
         <link rel="stylesheet" href="./styles/footerStyle.css">
+        <link rel="stylesheet" href="./styles/indexAdaptive.css">
         <title>JSO.PORTAFOLIO</title>
     </head>
     <body>
-        <div class="container-header-presentation">
-            <header id="header-id" class="header-page">  
+        <div id="idContainerHeaderPresentation" class="container-header-presentation">
+            <header id="idHeader" class="header-page">  
                 <a href="index.html" class="header-page__logo">JSO<span class="text-color">.PORTAFOLIO</span></a> 
                 <nav class="header-nav">
-                    <p class="header-nav__decoration">----- &gt;</p>
-                    <p class="header-nav__decoration">&lt;nav&gt;</p>
+                    <div class="container-decoration">
+                        <p class="header-nav__decoration">----- &gt;</p>
+                        <p class="header-nav__decoration">&lt;nav&gt;</p>
+                    </div>
                     <ul class="link-container">
-                        <li class="link-container__li"><a class="link-container__link" href="#quienSoyID">Inicio</a></li>
-                        <li class="link-container__li"><a class="link-container__link" href="#proyectosID">Sobre mí</a></li>
-                        <li class="link-container__li"><a class="link-container__link" href="#sobreMiID">Mis redes</a></li>
+                        <li class="link-container__li"><a class="link-container__link" href="#idContainerHeaderPresentation">Inicio</a></li>
+                        <li class="link-container__li"><a class="link-container__link" href="#idAboutMe">Sobre mí</a></li>
+                        <li class="link-container__li"><a class="link-container__link" href="#idNetworks">Mis redes</a></li>
                     </ul> 
-                    <p class="header-nav__decoration">&lt;/nav&gt;</p>
-                    <!--<span >☰</span>-->
+                    <span id="iconHeader" class="icon-header">☰</span> 
+                    <p class="header-nav__decoration header-nav__decoration-any">&lt;/nav&gt;</p>
                 </nav>
             </header>
 
@@ -34,16 +37,21 @@
                         </div>
                         <h1 class="presentation-information__title">Bienvenido(a) soy<br><span class="text-color">Sebastian Osorio</span>.</h1>
                         <p class="presentation-information__text">
-                            Soy un desarrollador web apasionado por la tecnologia y la inovación. 
-                            Me apasiona crear proyectos que solucionen un probrema y ayude a las personas.
+                            Soy un desarrollador de Software apasionado por descifrar como funcionan las cosas y el mundo. 
+                            Desde la lógica de los sistemas a la experiencia de usuario, 
+                            me gusta crear software eficiente, elegante y con propósito.
                         </p>
+                        <div class="technologies-desc">
+                            <p class="technologies-desc__text"><span class="text-color">--&gt;</span> Java</p>
+                            <p class="technologies-desc__text"><span class="text-color">--&gt;</span> C++</p>
+                            <p class="technologies-desc__text"><span class="text-color">--&gt;</span> JS</p>
+                        </div>
                     </div>
 
                     <div class="image">
-                        <img src="./assets/FotoPresentaciónSebastian.jpg" id="imgAnimacion" class="presentation-image">
+                        <img src="./assets/FotoPresentaciónSebastian.jpg" id="imgAnimation" class="presentation-image">
                         <div class="information-decoration">
                             <p class="information-decoration__text">------ &gt;&nbsp;&nbsp;&nbsp;&lt;img&gt; Mi Foto &lt;/img&gt;</p>
-                            <!--<pre class="information-decoration__text">----- >   &lt;h1&gt; Mi foto &lt;/h1&gt;</pre>-->
                         </div>
                     </div>
                 </div>
@@ -52,7 +60,7 @@
         </div>
        
         <main class="main-container">
-            <section class="about-me">
+            <section id="idAboutMe" class="about-me">
                 <div class="title-container">
                     <h2 class="title-container__title">Sobre <span class="text-color">mí</span></h2>
                     <hr class="title-container__line" />
@@ -67,22 +75,23 @@
                         <div class="text-me">
                             <p class="text-me__paragraph">
                                 <span class="text-color">-- &gt;</span>
-                                Desde pequeño siempre me ha llamado la atención las diferentes tecnologías que ayudaban y servían a las personas. 
-                                Siempre me hacía muchas preguntas; ¿Cómo funcionan las redes sociales?, ¿Qué hay detrás del videojuego que juego todos los días? 
-                                y ¿Cómo funciona el internet? Y entre otras preguntas que me hacían despertar curiosidad sobre el funcionamiento de las cosas. 
-                                De allí nació una pasión hacia la tecnología, la innovación, la programación y las telecomunicaciones.
+                                Desde que estaba en el colegio, siempre me ha llamado la atención las diferentes tecnologías que ayudan y aportan a la humanidad. 
+                                Me hacia preguntas que tal vez para muchos son invisibles como: ¿Cómo funcionan las redes sociales?, ¿Qué hay detrás de ese VideoJuego? 
+                                o ¿Qué sucede detrás de cada click? Y entre otras preguntas que me hacían sentir una curiosidad profunda por entender el funcionamiento de las cosas. 
+                                Esa chispa de curiosidad fue la que me llevo a explorar el mundo de la tecnología. 
                             </p>
                             <p class="text-me__paragraph">
                                 <span class="text-color">-- &gt;</span>
-                                Actualmente estoy estudiando Ingeniería de Telecomunicaciones en la Universidad de Antioquia. Tengo un extenso conocimiento 
-                                en varias tecnologías y herramientas, donde he trabajado en algunos proyectos prácticos.
+                                Hoy, esa misma pasión me impulsa a construir programas y software que no solo sea funcional, sino también eficiente y con buen diseño. 
+                                Tengo conocimientos en lenguajes de programación como <strong>C++</strong> y <strong>Java</strong> y también una creatividad visual en herramientas como Figma y canva. 
+                                Transformo ideas en experiencias digitales, utilizando <strong>JavaScript</strong>, <strong>HTML</strong> y <strong>CSS</strong>, sin perder de vista la experiencia de Usuario.
                             </p>
                             <p class="text-me__paragraph">
                                 <span class="text-color">-- &gt;</span>
-                                Busco seguir alimentando esa curiosidad y pasión que alguna vez me empujaron a aprender, por lo que constantemente aprendo cosas nuevas. 
-                                Imagino un mundo sostenible y en paz, donde todas las personas y el ambiente estén en armonía gracias a la tecnología y el esfuerzo de 
-                                millones de mentes.
+                                    Busco seguir alimentando esa curiosidad y pasión que alguna vez me empujaron a aprender. Mi objetivo es seguir descifrando "como funcionan las cosas" 
+                                    para construir soluciones que impacten positivamente al Mundo. 
                             </p>
+                            <p class="text-me__phrase">"Detrás de cada ídea, hay una mente maestra"</p>
                         </div> 
                         <hr class="text-container__line" />
                     </div>
@@ -100,7 +109,7 @@
                 </div>
             </section>
             
-            <section class="networks">
+            <section id="idNetworks" class="networks">
                 <div class="title-container title-container-networks-width">
                     <h2 class="title-container__title">Mis <span class="text-color">redes</span></h2>
                     <hr class="title-container__line" />
@@ -109,7 +118,7 @@
                 <div class="networks-container">
                     <div class="network-git">
                         <p class="network-git__information"><span class="text-color">------ &gt;</span>&nbsp;&nbsp; Personal.</p>
-                        <a class="network-link" href="#">
+                        <a class="network-link" href="https://github.com/JSebastia">
                             <img class="network-link__image" src="./assets/logoGitHub.svg">
                             <p class="network-link__text">GitHub</p>
                         </a>
@@ -118,8 +127,7 @@
 
                     <div class="network-git">
                         <p class="network-git__information"><span class="text-color">------ &gt;</span>&nbsp;&nbsp; Académico.</p>
-                        <a class="network-link" href="#">
-                            <!--<svg xmlns="./assets/github-mark-white.svg" fill="red" width="200px"></svg>-->
+                        <a class="network-link" href="https://github.com/SebastianOOU">
                             <img class="network-link__image" src="./assets/logoGitHub.svg">
                             <p class="network-link__text">GitHub</p>
                         </a>
@@ -127,7 +135,7 @@
                     </div>
 
                     <div class="network-linkedin">
-                        <a class="network-link" href="#">
+                        <a class="network-link" href="https://www.linkedin.com/in/sebastian-osorio-0212aa235/">
                             <img class="network-link__image" src="./assets/logoLinkedin.png">
                             <p class="network-link__text">Linkedin</p>
                         </a>
@@ -142,6 +150,8 @@
             <p class="footer-container__information">Creado con ❤️ por Sebastian Osorio.</p>
         </footer>
 
-        <script src="evento.js" defer></script>
+        <script src="./scripts/eventHeader.js" defer></script>
+        <script src="./scripts/animation_img.js"></script>
+        
     </body>
 </html>

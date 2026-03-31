@@ -3,36 +3,46 @@
     <head>
         <meta charset="UTF-8">
         <title>JSO.PORTAFOLIO - More_Information</title>
+        <link rel="icon" href="./assets/logoHead.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./styles/headerStyle.css">
         <link rel="stylesheet" href="./styles/moreInformationStyle.css">
         <link rel="stylesheet" href="./styles/footerStyle.css">
+        <link rel="stylesheet" href="./styles/moreInformationAdaptive.css">
     </head>
     <body>
-        <div id="container-header-presentation" class="container-header-presentation">
-            <header id="header-id" class="header-page">  
+        <div id="idContainerHeaderPresentation" class="container-header-presentation">
+            <header id="idHeader" class="header-page">  
                 <a href="index.html" class="header-page__logo">JSO<span class="text-color">.PORTAFOLIO</span></a> 
                 <nav class="header-nav">
-                    <p class="header-nav__decoration">----- &gt;</p>
-                    <p class="header-nav__decoration">&lt;nav&gt;</p>
+                    <div class="container-decoration">
+                        <p class="header-nav__decoration">----- &gt;</p>
+                        <p class="header-nav__decoration">&lt;nav&gt;</p>
+                    </div>
+                    
                     <ul class="link-container">
-                        <li class="link-container__li"><a class="link-container__link" href="#quienSoyID">Inicio</a></li>
-                        <li class="link-container__li"><a id="idCertified" class="link-container__link" href="#proyectosID">Certificados</a></li>
-                        <li class="link-container__li"><a class="link-container__link" href="#sobreMiID">Proyectos</a></li>
-                        <li class="link-container__li"><a class="link-container__link" href="#sobreMiID">Tecnologías</a></li>
-                    </ul> 
-                    <p class="header-nav__decoration">&lt;/nav&gt;</p>
-                    <!--<span >☰</span>-->
+                        <li class="link-container__li"><a class="link-container__link" href="#idContainerHeaderPresentation">Inicio</a></li>
+                        <li class="link-container__li"><a class="link-container__link" href="#idCertified">Certificados</a></li>
+                        <li class="link-container__li"><a class="link-container__link" href="#idProjects">Proyectos</a></li>
+                        <li class="link-container__li"><a class="link-container__link" href="#idTechnologies">Tecnologías</a></li>
+                    </ul>
+                    <span id="iconHeader" class="icon-header">☰</span> 
+                    <p class="header-nav__decoration header-nav__decoration-any">&lt;/nav&gt;</p>
                 </nav>
             </header>
 
             <section class="information">
-                <h1 class="information__title">Excelente, aquí encontraras algunos de mis <span class="text-color">Conocimientos</span> y <span class="text-color">Habilidades</span>.</h1>
+                <h1 class="information__title">
+                    Desde el día en que me pregunté <span class="text-color">¿Cómo funciona el internet?</span>, 
+                    no he parado de construir y de aprender.  
+                </h1>
+                <h2 class="information__subtittle">Bienvenido(a) a mi espacio de ingeniería y diseño.</h2>
                 <a href="#idProjects" class="information__button">Ver proyectos</a>
             </section>
         </div>
 
-        <main class="main-container" id="main">
-            <section class="certifieds">
+        <main class="main-container" id="idMain">
+            <section id="idCertified" class="certifieds">
                 <div class="title-container">
                     <h2 class="title-container__title">Certificados <span class="text-color">destacados</span></h2>
                     <hr class="title-container__line">
@@ -47,13 +57,16 @@
                     <hr class="title-container__line">
                 </div>
 
-                <h3 class="projects__title">Proyectos personales</h3>
-                <p class="projects__text">
-                    <span class="text-color">-- > </span>Además de asistir a clases, me apasiona aprender y crear cosas nuevas por cuenta propia. En esta sección encontraras 
-                    algunos proyectos desarrollados por iniciativa propia, donde pongo en practica mis conocimientos y propongo soluciones 
-                    a ciertos problemas.
-                </p>
-                <hr class="projects__line" />
+                <div class="information-projects">
+                    <h3 class="information-projects__title"><span class="text-color">title = "</span class="text-color">Proyectos personales.<span class="text-color">";</span></h3>
+                    <span class="text-color">console.log(</span>
+                    <p class="information-projects__text">
+                        <span class="text-color">" </span>Además de asistir a clases, me apasiona aprender y crear cosas nuevas por cuenta propia. En esta sección encontraras 
+                        algunos proyectos desarrollados por iniciativa propia, donde pongo en practica mis conocimientos y propongo soluciones 
+                        a ciertos problemas.<span class="text-color"> "</span>
+                    </p>
+                    <span class="text-color">);</span>
+                </div>
 
                 <div class="information-decoration information-decoration-projects-width">
                     <pre class="information-decoration__text">------ >   &lt;h2&gt; Proyectos: &lt;/h2&gt;</pre>
@@ -61,13 +74,16 @@
 
                 <div id="containerPersonalProjects" class="personal-projects"></div>
 
-                <h3 class="projects__title">Proyectos académicos</h3>
-                <p class="projects__text">
-                    <span class="text-color">-- > </span>Muchos conocimientos adquiridos a base de rigor académico. En esta sección encontraras proyectos 
-                    desarrollados durante mis estudios universitarios y en plataformas online. Donde aplico principios solidos de ingeniería y metodologías 
-                    de desarrollo colaborativo bajo estándares de calidad.
-                </p>
-                <hr class="projects__line" />
+                <div class="information-projects">
+                    <h3 class="information-projects__title"><span class="text-color">title = "</span class="text-color">Proyectos académicos.<span class="text-color">";</span></h3>
+                    <span class="text-color">console.log(</span>
+                    <p class="information-projects__text">
+                        <span class="text-color">" </span>Muchos conocimientos adquiridos a base de rigor académico. En esta sección encontraras proyectos 
+                        desarrollados durante mis estudios universitarios y en plataformas online. Donde aplico principios solidos de ingeniería y metodologías 
+                        de desarrollo colaborativo bajo estándares de calidad.<span class="text-color"> "</span>
+                    </p>
+                    <span class="text-color">);</span>
+                </div>
 
                 <div class="information-decoration information-decoration-projects-width">
                     <pre class="information-decoration__text">------ >   &lt;h2&gt; Proyectos: &lt;/h2&gt;</pre>
@@ -95,7 +111,7 @@
 
             </section>
 
-            <section class="technologies">
+            <section id="idTechnologies" class="technologies">
                  <div class="title-container title-container-margin">
                     <h2 class="title-container__title">Tecnologías que <span class="text-color">domino</span></h2>
                     <hr class="title-container__line">
@@ -118,13 +134,13 @@
 
         <div id="cardCertifiedReadMore" class="card-certified-read-more"></div>
 
-        <footer class="footer-container" id="footer">
+        <footer class="footer-container" id="idFooter">
             <p class="footer-container__copyright">&#169 2026<strong class="footer-logo">JSO<span class="text-color">.PORTAFOLIO</span></strong>Todos los derechos reservados.</p>
             <p class="footer-container__information">Creado con ❤️ por Sebastian Osorio.</p>
         </footer>
 
         <script type="module" src="./scripts/main_script.js"></script>
-        <script  src="evento.js"></script>
+        <script  src="./scripts/eventHeader.js"></script>
     </body>
 
 </html>
